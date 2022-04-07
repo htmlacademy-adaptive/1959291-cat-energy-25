@@ -1,1 +1,15 @@
-// Начните писать стили здесь
+// общие стили
+@import "./blocks/fonts";
+@import "./blocks/visually-hidden";
+@import "./blocks/page";
+@import "./blocks/page__body";
+@import "./blocks/main-header";
+@import "./blocks/main-nav";
+@import "./blocks/promo";
+@import "./blocks/program-type";
+@import "./blocks/how-it-works.scss";
+@import "./blocks/example.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";

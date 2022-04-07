@@ -1,0 +1,121 @@
+.example {
+  background: #f2f2f2;
+  margin: 0;
+  padding: 25px 20px 40px 20px;
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: left;
+  color: #000000;
+}
+
+.example__description {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.example__list {
+  margin: 0;
+  margin-top: 110px;
+  padding: 0;
+  list-style: none;
+}
+
+.example__item {
+  margin: 0;
+  margin-bottom: 39px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  // скрывает лишние
+  &--hidden {
+    display: none;
+  }
+}
+
+.example__price,
+.example__price-description {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.example__pictures {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.example__picture-after {
+  // скрываем
+  &--hidden {
+    display: none;
+  }
+}
+
+.example__picture-img {
+  display: flex;
+}
+
+.example__scale {
+  margin: 0 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example__text {
+  margin: 0;
+  padding: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.example__bar {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 15px;
+  box-sizing: border-box;
+  width: 86px;
+  height: 14px;
+  border-radius: 6px;
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+}
+
+.example__bar-data {
+  margin-left: 6px;
+  box-sizing: border-box;
+  width: 36px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #68b738;
+}
+
+.example__button {
+  padding: 0;
+  margin: 0;
+  // скрываем
+  &--hidden {
+    display: none;
+  }
+}

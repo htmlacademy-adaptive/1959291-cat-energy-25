@@ -1,0 +1,22 @@
+.social__list {
+  margin: 0;
+  padding: 22px 75px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__item {
+  display: flex;
+  align-items: center;
+  // отступ последнего элемента
+  &:not(:last-child) {
+    margin-right: 24px;
+  }
+}
+
+.social__link {
+  display: flex;
+  text-decoration: none;
+  color: #666666;
+}

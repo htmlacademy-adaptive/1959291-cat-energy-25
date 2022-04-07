@@ -1,0 +1,53 @@
+.contacts {
+  margin: 26px 0 0 0;
+  padding: 0;
+}
+
+.contacts__text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 26px;
+}
+
+.contacts__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+  max-width: 140px;
+}
+
+.contacts__address {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.contacts__city {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.contacts__map {
+  position: relative;
+  display: flex;
+}
+
+.contacts__map-pin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}

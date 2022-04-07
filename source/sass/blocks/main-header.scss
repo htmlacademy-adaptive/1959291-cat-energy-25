@@ -1,0 +1,19 @@
+.main-header {
+  margin: 0 20px;
+  // отступ до промо блока, 17.39px
+  margin-bottom: 17px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.main-header__logo-picture {
+  display: flex;
+}
+
+.main-header__logo-text {
+  display: flex;
+  margin: 13px 0 7px;
+}
