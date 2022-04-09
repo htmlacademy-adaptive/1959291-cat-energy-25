@@ -1,9 +1,17 @@
-.page {
+.page-catalog {
   background-color: #ffffff;
   height: 100%;
 }
 
-.page__body {
+.page-catalog__title {
+  padding: 0;
+  margin: 27px 20px 44px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.page-catalog__body {
   margin: 0 auto;
   padding-top: 10px;
   width: 320px;
@@ -14,4 +22,8 @@
   font-weight: 400;
   color: #000000;
   background-color: #ffffff;
+}
+
+.page-catalog__body > .main-container-catalog {
+  border-top: 1px solid #e6e6e6;
 }
