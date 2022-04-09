@@ -3,9 +3,8 @@
 }
 
 .additional-product__title {
-  margin: 0;
+  @include zero-indent;
   margin-bottom: 37px;
-  padding: 0;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -24,8 +23,7 @@
 }
 
 .additional-product__list {
-  margin: 0;
-  padding: 0;
+  @include zero-indent;
   list-style: none;
 }
 
@@ -43,9 +41,8 @@
 }
 
 .additional-product__name {
-  margin: 0;
+  @include zero-indent;
   margin-top: 12px;
-  padding: 0;
   grid-column: 1 / 3;
   margin-left: 1px;
   font-weight: 400;
@@ -57,9 +54,8 @@
 
 .additional-product__description,
 .additional-product__price {
-  margin: 0;
-  padding: 0;
-  font-family: "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+  @include zero-indent;
+  font-family: $font-arial;
   font-size: 14px;
   line-height: 14px;
   color: #444444;
@@ -79,5 +75,5 @@
   line-height: 20px;
   display: flex;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }

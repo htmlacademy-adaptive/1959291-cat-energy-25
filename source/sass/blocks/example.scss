@@ -5,9 +5,8 @@
 }
 
 .example__title {
-  margin: 0;
+  @include zero-indent;
   margin-bottom: 40px;
-  padding: 0;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -16,9 +15,8 @@
 }
 
 .example__description {
-  margin: 0;
-  padding: 0;
-  font-family: "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+  @include zero-indent;
+  font-family: $font-arial;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -26,16 +24,14 @@
 }
 
 .example__list {
-  margin: 0;
+  @include zero-indent;
   margin-top: 110px;
-  padding: 0;
   list-style: none;
 }
 
 .example__item {
-  margin: 0;
+  @include zero-indent;
   margin-bottom: 39px;
-  padding: 0;
   display: flex;
   justify-content: center;
   // скрывает лишние
@@ -46,8 +42,7 @@
 
 .example__price,
 .example__price-description {
-  margin: 0;
-  padding: 0;
+  @include zero-indent;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -57,9 +52,8 @@
 }
 
 .example__pictures {
-  margin: 0;
+  @include zero-indent;
   margin-bottom: 15px;
-  padding: 0;
 }
 
 .example__picture-after {
@@ -112,8 +106,7 @@
 }
 
 .example__button {
-  padding: 0;
-  margin: 0;
+  @include zero-indent;
   // скрываем
   &--hidden {
     display: none;

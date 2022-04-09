@@ -5,8 +5,7 @@
 }
 
 .how-it-works__title {
-  margin: 0;
-  padding: 0;
+  @include zero-indent;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -15,9 +14,8 @@
 }
 
 .how-it-works__list {
+  @include zero-indent;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .how-it-works__item {
@@ -45,7 +43,7 @@
   margin: 0;
   margin-left: 80px;
   padding: 2px 0 4px;
-  font-family: "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+  font-family: $font-arial;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;

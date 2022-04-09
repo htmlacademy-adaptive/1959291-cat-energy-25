@@ -1,6 +1,5 @@
 .main-nav__toggle {
-  padding: 0;
-  margin: 0;
+  @include zero-indent;
   margin-top: 8px;
   border: none;
   background-color: rgba($color: #000000, $alpha: 0);
@@ -14,14 +13,13 @@
   left: 0;
   width: 100%;
   // прячем меню
-//   &--hidden {
-//     display: none;
-//   }
+  &--hidden {
+    display: none;
+  }
 }
 
 .main-nav__list {
-  margin: 0;
-  padding: 0;
+  @include zero-indent;
   list-style: none;
   display: flex;
   align-items: center;

@@ -1,6 +1,5 @@
 .product__list {
-  margin: 0;
-  padding: 0;
+  @include zero-indent;
   list-style: none;
 }
 
@@ -37,7 +36,7 @@
 .product__info {
   margin-bottom: 14px;
   width: 100%;
-  font-family: "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+  font-family: $font-arial;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -47,8 +46,7 @@
 
 .data__text,
 .data__value {
-  padding: 0;
-  margin: 0;
+  @include zero-indent;
 }
 
 .data__value {

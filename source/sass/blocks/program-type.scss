@@ -23,8 +23,7 @@
 }
 
 .program-type__title {
-  padding: 0;
-  margin: 0;
+  @include zero-indent;
   margin-left: 71px;
   margin-bottom: 30px;
   font-weight: 400;
@@ -36,11 +35,10 @@
 }
 
 .program-type__description {
-  padding: 0;
-  margin: 0;
+  @include zero-indent;
   padding-right: 13px;
   margin-bottom: 37px;
-  font-family: "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+  font-family: $font-arial;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;

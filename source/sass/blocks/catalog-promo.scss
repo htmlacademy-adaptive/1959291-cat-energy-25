@@ -1,7 +1,6 @@
 .catalog-promo__wrapper {
   margin: 35px 20px;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-  url("../img/catalog-promo-background.png");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-promo-background.png");
   position: relative;
 }
 
@@ -16,7 +15,7 @@
 .catalog-promo__text {
   margin: 0;
   padding: 187px 59px 43px 60px;
-  font-family: "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+  font-family: $font-arial;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
