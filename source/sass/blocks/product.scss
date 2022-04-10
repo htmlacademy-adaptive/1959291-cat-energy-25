@@ -44,12 +44,12 @@
   border-collapse: collapse;
 }
 
-.data__text,
-.data__value {
+.product__data-text,
+.product__data-value {
   @include zero-indent;
 }
 
-.data__value {
+.product__data-value {
   text-align: right;
 }
 

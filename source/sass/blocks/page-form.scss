@@ -1,0 +1,36 @@
+.page-form {
+  background-color: #ffffff;
+  height: 100%;
+}
+
+.page-form__title {
+  padding: 0;
+  margin: 27px 20px 37px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  color: #000000;
+}
+
+.page-form__description {
+  @include zero-indent;
+  margin: 0 20px 39px;
+  padding-right: 15px;
+  font-size: 14px;
+  line-height: 129%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.page-form__body {
+  margin: 0 auto;
+  padding-top: 10px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+}
