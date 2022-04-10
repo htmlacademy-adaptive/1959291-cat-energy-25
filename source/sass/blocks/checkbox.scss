@@ -1,0 +1,33 @@
+.checkbox {
+  padding-left: 45px;
+  height: 30px;
+}
+
+.checkbox__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  margin-right: 15px;
+}
+
+.checkbox_input {
+  display: none;
+  //галочка - метка
+  &:checked + .checkbox__mark::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/mark.svg");
+    background-repeat: no-repeat;
+    background-position: 6px 8px;
+  }
+}

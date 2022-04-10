@@ -1,12 +1,16 @@
 .main-header {
   margin: 0;
   // отступ до промо блока, 17.39px
-  margin-bottom: 17px;
-  padding: 0 20px;
+  padding: 0 20px 17px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
+  &--catalog,
+  &--form {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
 }
 
 .main-header__logo-picture {

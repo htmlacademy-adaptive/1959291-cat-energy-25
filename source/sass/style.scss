@@ -8,6 +8,7 @@
 @import "./blocks/page";
 @import "./blocks/main-header";
 @import "./blocks/main-nav";
+
 // страница index.html
 @import "./blocks/promo";
 @import "./blocks/program-type";
@@ -17,9 +18,16 @@
 @import "./blocks/main-footer";
 @import "./blocks/social.scss";
 @import "./blocks/copyright";
+
 // страница catalog.html
 @import "./blocks/page-catalog";
 @import "./blocks/product.scss";
 @import "./blocks/show-more";
 @import "./blocks/additional-product";
 @import "./blocks/catalog-promo";
+
+// страница формы
+@import "./blocks/page-form";
+@import "./blocks/form";
+@import "./blocks/radio";
+@import "./blocks/checkbox";

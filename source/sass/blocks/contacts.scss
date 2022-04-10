@@ -1,9 +1,11 @@
 .contacts {
   padding-top: 26px;
-}
-
-.main-container-catalog > .contacts {
-  background-color: #f2f2f2;
+  &--catalog {
+    background-color: #f2f2f2;
+  }
+  &--form {
+    background-color: #f2f2f2;
+  }
 }
 
 .contacts__text-wrapper {
