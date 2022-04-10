@@ -13,7 +13,7 @@
   margin-right: 15px;
 }
 
-.checkbox_input {
+.checkbox__input {
   display: none;
   //галочка - метка
   &:checked + .checkbox__mark::before {
