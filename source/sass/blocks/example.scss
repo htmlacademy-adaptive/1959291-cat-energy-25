@@ -25,8 +25,10 @@
 
 .example__list {
   @include zero-indent;
-  margin-top: 110px;
+  margin-top: 20px;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .example__item {
@@ -34,10 +36,42 @@
   margin-bottom: 39px;
   display: flex;
   justify-content: center;
-  // скрывает лишние
-  &--hidden {
-    display: none;
-  }
+  position: relative;
+  width: 124px;
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.example__item-value {
+  @include zero-indent;
+  padding: 15px 0 18px;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  color: #000000;
+}
+
+.example__item-description {
+  @include zero-indent;
+  padding: 0 15px;
+  box-sizing: border-box;
+  width: 87px;
+  position: absolute;
+  top: 47px;
+  font-size: 12px;
+  line-height: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: #444444;
+  background-color: #f2f2f2;
+}
+
+
+.example__price-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .example__price,
