@@ -1,0 +1,148 @@
+.example {
+  background: #f2f2f2;
+  margin: 0;
+  padding: 25px 20px 40px 20px;
+}
+
+.example__title {
+  @include zero-indent;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: left;
+  color: #000000;
+}
+
+.example__description {
+  @include zero-indent;
+  font-family: $font-arial;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.example__list {
+  @include zero-indent;
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__item {
+  @include zero-indent;
+  margin-bottom: 39px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 124px;
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.example__item-value {
+  @include zero-indent;
+  padding: 15px 0 18px;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  color: #000000;
+}
+
+.example__item-description {
+  @include zero-indent;
+  padding: 0 15px;
+  box-sizing: border-box;
+  width: 87px;
+  position: absolute;
+  top: 47px;
+  font-size: 12px;
+  line-height: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: #444444;
+  background-color: #f2f2f2;
+}
+
+
+.example__price-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.example__price,
+.example__price-description {
+  @include zero-indent;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.example__pictures {
+  @include zero-indent;
+  margin-bottom: 15px;
+}
+
+.example__picture-after {
+  // скрываем
+  &--hidden {
+    display: none;
+  }
+}
+
+.example__picture-img {
+  display: flex;
+}
+
+.example__scale {
+  margin: 0 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example__text {
+  margin: 0;
+  padding: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.example__bar {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 15px;
+  box-sizing: border-box;
+  width: 86px;
+  height: 14px;
+  border-radius: 6px;
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+}
+
+.example__bar-data {
+  margin-left: 6px;
+  box-sizing: border-box;
+  width: 36px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #68b738;
+}
+
+.example__button {
+  @include zero-indent;
+  // скрываем
+  &--hidden {
+    display: none;
+  }
+}

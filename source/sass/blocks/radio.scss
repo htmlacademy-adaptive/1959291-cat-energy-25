@@ -1,0 +1,33 @@
+.radio {
+  padding-left: 45px;
+  height: 30px;
+}
+
+.radio__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
+  margin-right: 15px;
+}
+
+.radio__input {
+  display: none;
+  // кружок - метка
+  &:checked + .radio__mark::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #68b738;
+  }
+}

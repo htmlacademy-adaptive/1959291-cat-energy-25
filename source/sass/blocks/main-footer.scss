@@ -1,0 +1,29 @@
+.main-footer {
+  padding: 39px 20px 22px;
+  background-color: #f2f2f2;
+}
+
+.main-footer__logo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 26px;
+}
+
+.main-footer__logo {
+  color: #000000;
+}
+
+.main-footer__social {
+  // полоска после блока
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #d9d9d9;
+  }
+}
+
+.main-footer__copyright {
+  margin-top: 22px;
+}
