@@ -4,6 +4,7 @@
   flex-direction: column;
 
   @media (min-width: $desktop-width) {
+    margin: 0 110px;
     margin-top: -553px;
   }
 }
@@ -22,7 +23,7 @@
 
   @media (min-width: $desktop-width) {
     background: none;
-    padding: 82px 726px 52px 80px;
+    padding: 82px 716px 52px 80px;
   }
 }
 
@@ -43,9 +44,6 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 40px;
-    font-size: 60px;
-    color: #000000;
-    text-align: left;
   }
 }
 
