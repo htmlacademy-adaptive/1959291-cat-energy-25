@@ -1,6 +1,13 @@
 .main-footer {
-  padding: 39px 20px 22px;
+  margin: 0 auto;
+  width: $mobile-width;
   background-color: #f2f2f2;
+
+  @include view-port;
+}
+
+.main-footer__wrapper {
+  padding: 39px 20px 22px;
 }
 
 .main-footer__logo-wrapper {

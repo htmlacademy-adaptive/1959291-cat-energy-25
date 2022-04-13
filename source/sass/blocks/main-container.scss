@@ -1,0 +1,7 @@
+.main-container {
+  margin: 0 auto;
+  width: $mobile-width;
+  box-sizing: border-box;
+
+  @include view-port;
+}

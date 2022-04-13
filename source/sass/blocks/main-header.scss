@@ -1,20 +1,37 @@
 .main-header {
-  margin: 0;
+  margin: 0 auto;
+  width: $mobile-width;
+  box-sizing: border-box;
   // отступ до промо блока, 17.39px
-  padding: 0 20px 17px;
+  padding: 10px 20px 17px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
 
-  &--catalog,
-  &--form {
-    border-bottom: 1px solid #e6e6e6;
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    padding: 24px 30px 64px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding: 53px 110px 582px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/index-background-desktop.png");
+    background-size: 720px 694px;
+    background-position: 720px 0;
+    background-repeat: no-repeat;
+  }
+}
+
+.main-header--catalog,
+.main-header--form {
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .main-header__logo-picture {
   display: flex;
+  height: 59px;
 }
 
 .main-header__logo-text {

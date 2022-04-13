@@ -1,0 +1,23 @@
+// Шрифт Ариал и его аналоги
+$font-arial: "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+
+// нулевые отступы
+@mixin zero-indent {
+  margin: 0;
+  padding: 0;
+}
+
+// View ports
+$tablet-width: 768px;
+$desktop-width: 1440px;
+$mobile-width: 320px;
+
+@mixin view-port {
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}

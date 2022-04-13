@@ -1,15 +1,14 @@
-// переменные
-@import "./blocks/variables.scss";
-
 // общие стили
-@import "./blocks/fonts";
-@import "./blocks/visually-hidden";
-@import "./blocks/button";
+@import "./global/fonts";
+@import "./global/variables";
+@import "./global/global";
+@import "./global/button";
+
+// страница index.html
 @import "./blocks/page";
 @import "./blocks/main-header";
 @import "./blocks/main-nav";
-
-// страница index.html
+@import "./blocks/main-container";
 @import "./blocks/promo";
 @import "./blocks/program-type";
 @import "./blocks/how-it-works";
