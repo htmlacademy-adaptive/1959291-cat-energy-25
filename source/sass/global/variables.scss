@@ -12,6 +12,7 @@ $tablet-width: 768px;
 $desktop-width: 1440px;
 $mobile-width: 320px;
 
+// View ports временный
 @mixin view-port {
   @media (min-width: $tablet-width) {
     width: $tablet-width;
@@ -20,4 +21,19 @@ $mobile-width: 320px;
   @media (min-width: $desktop-width) {
     width: $desktop-width;
   }
+}
+
+// кнопка
+@mixin button {
+  @include zero-indent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  word-wrap: break-word;
+  color: #ffffff;
+  background-color: #68b738;
+  border: none;
+  cursor: pointer;
 }

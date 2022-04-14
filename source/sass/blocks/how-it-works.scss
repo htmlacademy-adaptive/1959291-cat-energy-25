@@ -1,7 +1,17 @@
-.how-it-works {
-  background: #ffffff;
+.how-it-works__wrapper {
   margin: 20px;
   margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 15px 30px 47px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 41px 110px 26px;
+    border: none;
+  }
 }
 
 .how-it-works__title {
@@ -11,16 +21,88 @@
   line-height: 40px;
   text-align: left;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 100%;
+    margin-bottom: 32px;
+  }
 }
 
 .how-it-works__list {
   @include zero-indent;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    column-gap: 133px;
+    row-gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    column-gap: 75px;
+  }
 }
 
 .how-it-works__item {
   position: relative;
   margin-bottom: 20px;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    margin: 40px 0 57px;
+
+    &:nth-child(1)::after {
+      content: "1";
+      font-size: 280px;
+      line-height: 100%;
+      color: #f2f2f2;
+      display: flex;
+      position: absolute;
+      z-index: -1;
+      top: -40px;
+      right: 20px;
+    }
+
+    &:nth-child(2)::after {
+      content: "2";
+      font-size: 280px;
+      line-height: 100%;
+      color: #f2f2f2;
+      display: flex;
+      position: absolute;
+      z-index: -1;
+      top: -40px;
+      right: 20px;
+    }
+
+    &:nth-child(3)::after {
+      content: "3";
+      font-size: 280px;
+      line-height: 100%;
+      color: #f2f2f2;
+      display: flex;
+      position: absolute;
+      z-index: -1;
+      top: -40px;
+      right: 20px;
+    }
+
+    &:nth-child(4)::after {
+      content: "4";
+      font-size: 280px;
+      line-height: 100%;
+      color: #f2f2f2;
+      display: flex;
+      position: absolute;
+      z-index: -1;
+      top: -40px;
+      right: 20px;
+    }
+  }
 }
 
 .how-it-works__logo {
@@ -33,6 +115,11 @@
   width: 60px;
   height: 60px;
   background-color: #68b738;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .how-it-works__icon {
@@ -46,6 +133,14 @@
   font-family: $font-arial;
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 129%;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: 111px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 150%;
+  }
 }

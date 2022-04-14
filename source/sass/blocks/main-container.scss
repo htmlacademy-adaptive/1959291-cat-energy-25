@@ -2,9 +2,6 @@
   margin: 0 auto;
   width: $mobile-width;
   box-sizing: border-box;
-  // для отладки
-  outline: 1px solid #000000;
-  outline-offset: -1px;
 
   @include view-port;
 }

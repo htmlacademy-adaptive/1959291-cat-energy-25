@@ -1,9 +1,20 @@
+.social {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .social__list {
   margin: 0;
   padding: 22px 75px;
   list-style: none;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .social__item {

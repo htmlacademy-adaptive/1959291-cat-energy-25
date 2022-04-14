@@ -2,10 +2,14 @@
   @include zero-indent;
   list-style: none;
 
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 110px;
+    margin: 0 110px;
   }
 }
 

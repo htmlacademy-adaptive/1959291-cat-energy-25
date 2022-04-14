@@ -68,6 +68,7 @@
 }
 
 .additional-product__button {
+  @include button;
   grid-column: 1 / 3;
   margin-top: 2px;
   margin-bottom: 1px;
