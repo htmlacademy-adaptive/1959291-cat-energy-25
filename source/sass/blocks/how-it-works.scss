@@ -55,44 +55,8 @@
   @media (min-width: $tablet-width) {
     margin: 40px 0 57px;
 
-    &:nth-child(1)::after {
-      content: "1";
-      font-size: 280px;
-      line-height: 100%;
-      color: #f2f2f2;
-      display: flex;
-      position: absolute;
-      z-index: -1;
-      top: -40px;
-      right: 20px;
-    }
-
-    &:nth-child(2)::after {
-      content: "2";
-      font-size: 280px;
-      line-height: 100%;
-      color: #f2f2f2;
-      display: flex;
-      position: absolute;
-      z-index: -1;
-      top: -40px;
-      right: 20px;
-    }
-
-    &:nth-child(3)::after {
-      content: "3";
-      font-size: 280px;
-      line-height: 100%;
-      color: #f2f2f2;
-      display: flex;
-      position: absolute;
-      z-index: -1;
-      top: -40px;
-      right: 20px;
-    }
-
-    &:nth-child(4)::after {
-      content: "4";
+    &:nth-child(n)::after {
+      content: attr(counter) "";
       font-size: 280px;
       line-height: 100%;
       color: #f2f2f2;
