@@ -5,3 +5,15 @@
 
   @include view-port;
 }
+
+.main-container__title {
+  padding: 0;
+  margin: 27px 20px 44px;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
+}
