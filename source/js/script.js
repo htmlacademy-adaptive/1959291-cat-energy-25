@@ -1,8 +1,8 @@
-let headerMain = document.querySelector('.main-header');
+let page = document.querySelector('.page__body');
 let navMainWrapper = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
 
-headerMain.classList.remove('main-header--nojs');
+page.classList.remove('page__body--nojs');
 navMainWrapper.classList.remove('main-nav--opened');
 navMainWrapper.classList.add('main-nav--closed');
 

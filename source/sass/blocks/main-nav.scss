@@ -53,10 +53,6 @@
   }
 }
 
-.main-header--nojs .main-nav__toggle {
-  display: none;
-}
-
 .main-nav__toggle {
   @include zero-indent;
   position: relative;

@@ -12,4 +12,19 @@
   font-weight: 400;
   color: #000000;
   background-color: #ffffff;
+
+  &--nojs {
+    .main-header {
+      padding-left: 70px;
+      margin-bottom: 199px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 0;
+      }
+    }
+
+    .main-nav__toggle {
+      display: none;
+    }
+  }
 }

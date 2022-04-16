@@ -9,15 +9,9 @@
   align-items: center;
   position: relative;
 
-  &--nojs {
-    padding-left: 70px;
-    margin-bottom: 199px;
-  }
-
   @media (min-width: $tablet-width) {
     width: $tablet-width;
     padding: 24px 30px 64px;
-    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
