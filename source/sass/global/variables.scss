@@ -11,6 +11,7 @@ $font-arial: "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
 $tablet-width: 768px;
 $desktop-width: 1440px;
 $mobile-width: 320px;
+$mobile-width-only: 767px;
 
 // View ports временный
 @mixin view-port {

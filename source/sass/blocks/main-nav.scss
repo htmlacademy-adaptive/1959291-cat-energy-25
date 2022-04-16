@@ -1,6 +1,68 @@
+.main-nav {
+  @include zero-indent;
+
+  &--opened {
+    .main-nav__wrapper {
+      display: block;
+    }
+
+    .main-nav__toggle::before,
+    .main-nav__toggle::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 25px;
+      height: 2px;
+      background-color: #000000;
+    }
+
+    .main-nav__toggle::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    .main-nav__toggle::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &--closed {
+    .main-nav__wrapper {
+      display: none;
+    }
+
+    .main-nav__toggle::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 2px;
+      background-color: #000000;
+      box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    .main-nav__wrapper {
+      display: block;
+    }
+  }
+}
+
+.main-header--nojs .main-nav__toggle {
+  display: none;
+}
+
 .main-nav__toggle {
   @include zero-indent;
-  margin-top: 8px;
+  position: relative;
+  width: 24px;
+  height: 18px;
+  padding: 12px 0 8px;
   border: none;
   background-color: rgba($color: #000000, $alpha: 0);
   cursor: pointer;
@@ -17,21 +79,19 @@
 .main-nav__wrapper {
   position: absolute;
   z-index: 1;
-  top: 55px;
+  top: 65px;
   left: 0;
   width: 100%;
   background-color: #ffffff;
-  // прячем меню
-  &--hidden {
-    display: none;
-  }
 
   @media (min-width: $tablet-width) {
+    display: block;
     position: static;
     background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {
+    display: block;
     position: static;
     background-color: transparent;
   }
@@ -91,7 +151,7 @@
   display: block;
   font-size: 20px;
   line-height: 20px;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
