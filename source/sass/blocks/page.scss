@@ -15,11 +15,12 @@
 
   &--nojs {
     .main-header {
-      padding-left: 70px;
       margin-bottom: 199px;
+      justify-content: center;
 
       @media (min-width: $tablet-width) {
         margin-bottom: 0;
+        justify-content: space-between;
       }
     }
 
