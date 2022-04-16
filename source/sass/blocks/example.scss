@@ -58,7 +58,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // display: flex;
     margin-top: 70px;
     margin-bottom: 69px;
     grid-area: 2 / 1 / 3 / 2;
@@ -228,7 +227,7 @@
 }
 
 .example__picture-after {
-  // скрываем
+
   &--hidden {
     display: none;
   }
