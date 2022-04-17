@@ -6,7 +6,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 81px;
-    padding: 49px 36px 39px;
+    padding: 56px 36px 39px;
     display: flex;
     row-gap: 0;
     flex-direction: column;
@@ -47,7 +47,7 @@
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 60px;
-    margin-bottom: 45px;
+    margin-bottom: 49px;
 
     &::before,
     &::after {

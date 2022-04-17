@@ -151,6 +151,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
@@ -168,6 +169,12 @@
   }
 }
 
+.main-nav--catalog .main-nav__link {
+  @media (min-width: $desktop-width) {
+    color: #000000;
+  }
+}
+
 .main-nav__link--current {
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid #68b738;
@@ -175,5 +182,11 @@
 
   @media (min-width: $desktop-width) {
     border-bottom: 2px solid #ffffff;
+  }
+}
+
+.main-nav--catalog .main-nav__link--current {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid #68b738;
   }
 }
