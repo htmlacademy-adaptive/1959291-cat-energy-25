@@ -38,3 +38,14 @@ $mobile-width-only: 767px;
   border: none;
   cursor: pointer;
 }
+
+// input before
+@mixin input-before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  display: block;
+  box-sizing: border-box;
+}
