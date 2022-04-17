@@ -1,7 +1,23 @@
-.example {
+.example__wrapper {
   background: #f2f2f2;
   margin: 0;
   padding: 25px 20px 40px 20px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+    padding: 0;
+    padding-top: 43px;
+    background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    margin: 0;
+    background: #f2f2f2;
+    display: grid;
+    grid-template-columns: repeat(2, 610px);
+  }
 }
 
 .example__title {
@@ -12,6 +28,19 @@
   line-height: 40px;
   text-align: left;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 100%;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 -110px;
+    padding: 43px 110px 76px;
+    background: #ffffff;
+    grid-area: 1 / 1 / 1 / -1;
+  }
 }
 
 .example__description {
@@ -19,21 +48,57 @@
   font-family: $font-arial;
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 129%;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 70px;
+    margin-bottom: 69px;
+    grid-area: 2 / 1 / 3 / 2;
+  }
+}
+
+.example__data-wrapper {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 255px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    flex-direction: column;
+    justify-content: left;
+    grid-area: 3 / 1 / 4 / 2;
+  }
 }
 
 .example__list {
   @include zero-indent;
   margin-top: 20px;
+  margin-bottom: 39px;
   list-style: none;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    justify-content: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .example__item {
   @include zero-indent;
-  margin-bottom: 39px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -41,15 +106,30 @@
   box-sizing: border-box;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+
+    &:not(:last-child) {
+      margin-right: 43px;
+    }
+  }
 }
 
 .example__item-value {
   @include zero-indent;
-  padding: 15px 0 18px;
+  padding: 15px 5px 18px;
   font-size: 24px;
   line-height: 100%;
   text-align: center;
+  word-break: break-all;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 5px 20px;
+    font-size: 30px;
+    line-height: 123%;
+  }
 }
 
 .example__item-description {
@@ -61,17 +141,41 @@
   top: 47px;
   font-size: 12px;
   line-height: 100%;
+  text-transform: lowercase;
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   justify-content: center;
   color: #444444;
   background-color: #f2f2f2;
-}
 
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    width: auto;
+    font-size: 14px;
+    top: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+  }
+}
 
 .example__price-wrapper {
   display: flex;
   justify-content: center;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: left;
+    margin-bottom: 75px;
+  }
 }
 
 .example__price,
@@ -83,15 +187,46 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 100%;
+  }
 }
 
-.example__pictures {
+.example__price-description {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    margin-right: 63px;
+  }
+}
+
+.example__pictures-wrapper {
   @include zero-indent;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    margin-top: -171px;
+    margin-bottom: -341px;
+    width: 592px;
+    height: 511px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    top: 0;
+    right: 110px;
+    order: 1;
+    grid-area: 1 / 2 / 4 / -1;
+  }
 }
 
 .example__picture-after {
-  // скрываем
   &--hidden {
     display: none;
   }
@@ -106,6 +241,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 370px 57px 61px 60px;
+    background-color: #eaeaea;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+    grid-area: 3 / 2 / 4 / -1;
+    padding: 0;
+    margin-top: 126px;
+    margin-bottom: 75px;
+  }
 }
 
 .example__text {
@@ -119,30 +268,66 @@
 }
 
 .example__bar {
+  position: relative;
+  margin: 0 15px;
   display: inline-flex;
   align-items: center;
-  margin: 0 15px;
   box-sizing: border-box;
-  width: 86px;
+  width: 100%;
   height: 14px;
   border-radius: 6px;
   border: 1px solid #cdcdcd;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    height: 6px;
+    border: none;
+    background-color: #dcdcdc;
+  }
 }
 
 .example__bar-data {
   margin-left: 6px;
   box-sizing: border-box;
-  width: 36px;
+  width: 44.3%;
   height: 6px;
   border-radius: 3px;
   background-color: #68b738;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .example__button {
   @include zero-indent;
-  // скрываем
-  &--hidden {
-    display: none;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 34px;
+  height: 34px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    box-sizing: border-box;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #68b738;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
