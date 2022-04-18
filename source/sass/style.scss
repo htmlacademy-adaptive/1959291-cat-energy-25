@@ -1,15 +1,13 @@
-// переменные
-@import "./blocks/variables.scss";
-
 // общие стили
-@import "./blocks/fonts";
-@import "./blocks/visually-hidden";
-@import "./blocks/button";
+@import "./global/fonts";
+@import "./global/variables";
+@import "./global/global";
+
+// страница index.html
 @import "./blocks/page";
 @import "./blocks/main-header";
 @import "./blocks/main-nav";
-
-// страница index.html
+@import "./blocks/main-container";
 @import "./blocks/promo";
 @import "./blocks/program-type";
 @import "./blocks/how-it-works";
@@ -20,11 +18,9 @@
 @import "./blocks/copyright";
 
 // страница catalog.html
-@import "./blocks/page-catalog";
 @import "./blocks/product.scss";
 @import "./blocks/show-more";
 @import "./blocks/additional-product";
-@import "./blocks/catalog-promo";
 
 // страница формы
 @import "./blocks/page-form";
