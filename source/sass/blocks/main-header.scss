@@ -1,15 +1,23 @@
 .main-header {
-  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.main-header__wrapper {
   width: $mobile-width;
   box-sizing: border-box;
-  // отступ до промо блока, 17.39px
-  padding: 10px 20px 17px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin: 0 auto;
   position: relative;
+  // display: flex;
+  // flex-wrap: wrap;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  // position: relative;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: $tablet-width;
     padding: 24px 30px 62px;
   }
@@ -38,12 +46,7 @@
   }
 }
 
-.main-header__logo-picture {
+.main-header__logo {
   display: flex;
-}
-
-.main-header__logo-text {
-  display: flex;
-  margin: 13px 0 7px;
-  color: #111111;
+  margin: 10px 20px 17px;
 }

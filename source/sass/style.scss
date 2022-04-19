@@ -5,6 +5,7 @@
 
 // страница index.html
 @import "./blocks/page";
+@import "./blocks/nojs";
 @import "./blocks/main-header";
 @import "./blocks/main-nav";
 @import "./blocks/main-container";
@@ -23,7 +24,4 @@
 @import "./blocks/additional-product";
 
 // страница формы
-// @import "./blocks/form";
-@import "./blocks/form2";
-// @import "./blocks/radio";
-// @import "./blocks/checkbox";
+@import "./blocks/form";

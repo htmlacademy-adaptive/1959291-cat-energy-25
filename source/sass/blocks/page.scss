@@ -13,19 +13,19 @@
   color: #000000;
   background-color: #ffffff;
 
-  &--nojs {
-    .main-header {
-      margin-bottom: 199px;
-      justify-content: center;
+  // &--nojs {
+  //   .main-header {
+  //     margin-bottom: 199px;
+  //     justify-content: center;
 
-      @media (min-width: $tablet-width) {
-        margin-bottom: 0;
-        justify-content: space-between;
-      }
-    }
+  //     @media (min-width: $tablet-width) {
+  //       margin-bottom: 0;
+  //       justify-content: space-between;
+  //     }
+  //   }
 
-    .main-nav__toggle {
-      display: none;
-    }
-  }
+  //   .main-nav__toggle {
+  //     display: none;
+  //   }
+  // }
 }
