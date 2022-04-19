@@ -1,14 +1,24 @@
+.example {
+  background: #eaeaea;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    background: #ffffff;
+    margin-bottom: 60px;
+  }
+}
+
 .example__wrapper {
-  background: #f2f2f2;
-  margin: 0;
-  padding: 25px 20px 40px 20px;
+  margin: 0 auto 15px;
+  padding: 25px 20px 0;
+  width: $mobile-width;
+  box-sizing: border-box;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin: 0 30px;
-    padding: 0;
-    padding-top: 43px;
-    background: none;
+    margin: 0 auto;
+    padding: 25px 20px 0;
+    width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,7 +41,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
-    line-height: 100%;
+    line-height: 1;
     margin-bottom: 63px;
   }
 
@@ -53,7 +63,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.5;
     margin-bottom: 54px;
   }
 
@@ -65,8 +75,10 @@
 }
 
 .example__data-wrapper {
+  margin-bottom: 40px;
+
   @media (min-width: $tablet-width) {
-    margin-bottom: 255px;
+    margin-bottom: 80px;
     display: flex;
     justify-content: space-between;
   }
@@ -207,14 +219,13 @@
 
 .example__pictures-wrapper {
   @include zero-indent;
-  margin-bottom: 15px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
-    margin-top: -171px;
     margin-bottom: -341px;
     width: 592px;
     height: 511px;
+    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
@@ -226,26 +237,38 @@
   }
 }
 
-.example__picture-after {
-  &--hidden {
-    display: none;
-  }
-}
+// .example__picture-after {
+//   &--hidden {
+//     display: none;
+//   }
+// }
 
 .example__picture-img {
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    object-fit: contain;
+    width: 592px;
+    height: 511px;
+  }
 }
 
 .example__scale {
-  margin: 0 35px;
+  background-color: #eaeaea;
+}
+
+.example__scale-wrapper {
+  margin: 0 auto;
+  width: $mobile-width;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-    padding: 370px 57px 61px 60px;
-    background-color: #eaeaea;
+    margin: 0 auto;
+    padding: 366px 88px 55px;
+    width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {
@@ -258,12 +281,11 @@
 }
 
 .example__text {
-  margin: 0;
+  @include button;
+  background: none;
   padding: 5px;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
   color: #000000;
 }
 

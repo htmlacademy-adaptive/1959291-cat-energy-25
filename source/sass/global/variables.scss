@@ -27,6 +27,7 @@ $mobile-width-only: 767px;
 // кнопка
 @mixin button {
   @include zero-indent;
+  font-family: inherit;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

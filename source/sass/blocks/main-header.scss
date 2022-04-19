@@ -1,22 +1,11 @@
 .main-header {
-  background-color: #ffffff;
-}
-
-.main-header__wrapper {
   width: $mobile-width;
   box-sizing: border-box;
   margin: 0 auto;
-  position: relative;
-  // display: flex;
-  // flex-wrap: wrap;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
   // position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     width: $tablet-width;
     padding: 24px 30px 62px;
@@ -24,11 +13,21 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    padding: 53px 110px 582px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop.png");
-    background-size: 720px 694px;
-    background-position: 720px 0;
-    background-repeat: no-repeat;
+    padding: 53px 110px 29px;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 696px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(to right, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%), url("../img/index-background-desktop.jpg");
+      background-position: right top;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
   }
 }
 
