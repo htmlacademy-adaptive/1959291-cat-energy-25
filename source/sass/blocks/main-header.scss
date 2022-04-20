@@ -1,7 +1,7 @@
 .main-header {
+  margin: 0 auto;
   width: $mobile-width;
   box-sizing: border-box;
-  margin: 0 auto;
   // position: relative;
 
   @media (min-width: $tablet-width) {
@@ -40,12 +40,25 @@
   }
 
   @media (min-width: $desktop-width) {
-    background: none;
     padding: 53px 110px 74px;
+
+    &::after {
+      display: none;
+    }
   }
 }
+
+// .main-header--form {
+//   @media (min-width: $desktop-width) {
+//     padding: 53px 110px 74px;
+//   }
+// }
 
 .main-header__logo {
   display: flex;
   margin: 10px 20px 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
 }
