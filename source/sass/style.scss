@@ -1,7 +1,8 @@
 // общие стили
+@import "./global/global";
 @import "./global/fonts";
 @import "./global/variables";
-@import "./global/global";
+@import "./global/mixins";
 
 // страница index.html
 @import "./blocks/page";

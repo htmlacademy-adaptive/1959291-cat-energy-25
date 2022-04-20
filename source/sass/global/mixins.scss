@@ -1,0 +1,44 @@
+// нулевые отступы
+@mixin zero-indent {
+  margin: 0;
+  padding: 0;
+}
+
+// View ports временный
+@mixin view-port {
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+// кнопка
+@mixin button {
+  @include zero-indent;
+  font-family: inherit;
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  word-wrap: break-word;
+  color: #ffffff;
+  background-color: #68b738;
+  border: none;
+  cursor: pointer;
+}
+
+// input before
+@mixin input-before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  display: block;
+  box-sizing: border-box;
+}
