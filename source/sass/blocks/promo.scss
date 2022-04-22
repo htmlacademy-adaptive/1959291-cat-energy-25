@@ -1,18 +1,11 @@
-.promo {
-  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, #ffffff 1%), url("../img/index-promo-background.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
-
-  @media (min-width: $tablet-width) {
-    background: none;
-  }
-}
-
 .promo__wrapper {
   margin: 0 auto 20px;
   width: $mobile-width;
   box-sizing: border-box;
   position: relative;
+  background-image: url("../img/index-can-mobile-1.png");
+  background-repeat: no-repeat;
+  background-position: 50% 80%;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto 30px;
@@ -26,7 +19,8 @@
 }
 
 .promo__header {
-  padding: 27px 15px 29px 16px;
+  padding: 27px 15px 0 16px;
+  margin-bottom: 302px;
   color: #ffffff;
 
   @media (min-width: $tablet-width) {

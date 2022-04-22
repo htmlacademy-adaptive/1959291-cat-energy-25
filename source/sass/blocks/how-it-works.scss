@@ -35,6 +35,7 @@
   @include zero-indent;
   list-style: none;
   margin: 0 20px 49px;
+  counter-reset: number;
 
   @media (min-width: $tablet-width) {
     margin: 0 30px;
@@ -55,12 +56,13 @@
   position: relative;
   margin-bottom: 20px;
   z-index: 1;
+  counter-increment: number;
 
   @media (min-width: $tablet-width) {
     margin: 40px 0 57px;
 
     &:nth-child(n)::after {
-      content: attr(data-number) "";
+      content: counter(number);
       font-size: 280px;
       line-height: 100%;
       color: #f2f2f2;
