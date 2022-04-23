@@ -12,6 +12,8 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 auto 26px;
+    padding: 0;
+    width: $desktop-width;
     border: none;
   }
 }
@@ -25,9 +27,13 @@
   text-align: left;
 
   @media (min-width: $tablet-width) {
-    margin: 0 333px 32px 30px;
+    margin: 0 30px 32px;
     font-size: 60px;
     line-height: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px 32px;
   }
 }
 
@@ -46,6 +52,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 110px;
     display: grid;
     grid-template-columns: repeat(4, 250px);
     column-gap: 75px;
