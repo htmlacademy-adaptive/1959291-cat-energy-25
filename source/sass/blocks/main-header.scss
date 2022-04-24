@@ -28,10 +28,31 @@
       position: absolute;
       top: 0;
       left: 0;
-      background-image: linear-gradient(to left, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%), url("../img/header-desktop.jpg");
+      background-image: linear-gradient(to left, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%), url("../img/additional-product-promo-background-mobile.jpg");
       background-position: right top;
       background-repeat: no-repeat;
       z-index: -1;
+    }
+  }
+}
+
+.main-header--catalog,
+.main-header--form {
+  border-bottom: 1px solid #e6e6e6;
+
+  &::before {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 53px 110px 74px;
+
+    &::after {
+      display: none;
     }
   }
 }
@@ -53,29 +74,6 @@
     padding: 53px 110px 29px;
   }
 }
-
-.main-header--catalog,
-.main-header--form {
-  border-bottom: 1px solid #e6e6e6;
-
-  @media (min-width: $tablet-width) {
-    border-bottom: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 53px 110px 74px;
-
-    &::after {
-      display: none;
-    }
-  }
-}
-
-// .main-header--form {
-//   @media (min-width: $desktop-width) {
-//     padding: 53px 110px 74px;
-//   }
-// }
 
 .main-header__logo {
   display: flex;

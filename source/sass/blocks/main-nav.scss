@@ -148,6 +148,10 @@
 
 .main-nav--catalog .main-nav__link,
 .main-nav--form .main-nav__link {
+  @media (min-width: $tablet-width) {
+    color: #000000;
+  }
+
   @media (min-width: $desktop-width) {
     color: #000000;
   }

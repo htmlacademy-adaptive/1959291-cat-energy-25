@@ -19,8 +19,8 @@
 .form__group {
   @include zero-indent;
   border: 0;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
 
   @media (min-width: $tablet-width) {
     margin: 0 30px;
