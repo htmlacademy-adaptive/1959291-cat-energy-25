@@ -19,7 +19,7 @@
 @mixin button {
   @include zero-indent;
   font-family: inherit;
-  display: flex;
+  display: inline-flex;
   box-sizing: border-box;
   flex-wrap: wrap;
   justify-content: center;
