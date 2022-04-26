@@ -57,6 +57,15 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+
+  &:hover {
+    background: none;
+    opacity: 0.8;
+  }
+
+  &:active {
+    color: rgba($color: #000000, $alpha: 0.3);
+  }
 }
 
 .main-nav__toggle::before {
