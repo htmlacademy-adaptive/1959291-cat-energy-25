@@ -77,9 +77,18 @@
 
 .main-header__logo {
   display: flex;
-  margin: 11px 20px 17px;
+  padding: 11px 20px 17px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
 
   @media (min-width: $tablet-width) {
-    margin-left: 0;
+    margin-left: -20px;
   }
 }

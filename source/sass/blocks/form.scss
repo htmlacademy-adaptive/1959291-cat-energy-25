@@ -88,8 +88,6 @@
 
 .form__title {
   @include zero-indent;
-  // display: inline-block; - не работает на legend, используем width: fit-content;
-  // width: fit-content;
   font-weight: 400;
   display: inline-block;
   padding-right: 18px;
