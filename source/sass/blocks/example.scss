@@ -225,6 +225,10 @@
 
 .example__pictures-wrapper {
   @include zero-indent;
+  position: relative;
+  overflow: hidden;
+  width: 280px;
+  height: 277px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto 25px;
@@ -237,14 +241,30 @@
   }
 }
 
-.example__picture-img {
-  display: flex;
+// .example__picture-resize {
+//   position: absolute;
+//   top: 0;
+//   height: 100%;
+//   overflow: hidden;
+//   margin: 0 auto;
 
-  @media (min-width: $tablet-width) {
-    object-fit: contain;
-    width: 592px;
-    height: 511px;
-  }
+//   @media (min-width: $tablet-width) {
+//     width: 100%;
+//   }
+// }
+
+// .example__picture-resize--before {
+//   left: 0;
+//   width: 50%;
+// }
+
+// .example__picture-resize--after {
+//   left: 0;
+//   width: 50%;
+// }
+
+.example__picture {
+  width: 100%;
 }
 
 .example__scale {
@@ -346,6 +366,7 @@
   border: 1px solid #cdcdcd;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
   cursor: pointer;
+  display: none;
 
   &::before {
     position: absolute;
