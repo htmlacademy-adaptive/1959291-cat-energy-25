@@ -1,4 +1,5 @@
-let page = document.querySelector('.page__body');
+// let page = document.querySelector('.page__body');
+let page = document.getElementsByTagName('body') [0];
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
 
