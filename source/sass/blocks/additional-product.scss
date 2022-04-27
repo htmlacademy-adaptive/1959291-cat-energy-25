@@ -199,17 +199,50 @@
 .additional-product__promo-wrapper {
   margin: 0 20px;
   position: relative;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/additional-product-promo-background-mobile.png");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
   background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-image: url("../img/additional-product-promo-background-mobile.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/additional-product-promo-background-mobile@2x.png");
+      background-size: 280px auto;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0 30px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/additional-product-promo-background-tablet.jpg");
+
+    &::before {
+      background-image: url("../img/additional-product-promo-background-tablet.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/additional-product-promo-background-tablet@2x.png");
+        background-size: 707px auto;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/additional-product-promo-background-desktop.jpg");
+
+    &::before {
+      background-image: url("../img/additional-product-promo-background-desktop.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/additional-product-promo-background-desktop@2x.png");
+        background-size: 245px auto;
+      }
+    }
   }
 }
 

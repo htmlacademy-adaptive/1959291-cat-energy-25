@@ -80,16 +80,16 @@
     display: none;
   }
 
+  &::after {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
     padding: 53px 110px 74px;
-
-    &::after {
-      display: none;
-    }
   }
 }
 
