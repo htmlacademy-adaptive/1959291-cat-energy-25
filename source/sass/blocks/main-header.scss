@@ -1,26 +1,38 @@
 .main-header {
-  margin: 0 auto;
-  width: $mobile-width;
-  box-sizing: border-box;
-  // отступ до промо блока, 17.39px
-  padding: 10px 20px 17px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: relative;
 
+  &::before {
+    content: "";
+    width: 100%;
+    height: 357px;
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient(to left, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/header-mobile.jpg");
+    background-position: 50% 55px;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
-    padding: 24px 30px 62px;
+    &::before {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
-    padding: 53px 110px 582px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop.png");
-    background-size: 720px 694px;
-    background-position: 720px 0;
-    background-repeat: no-repeat;
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 696px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(to left, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%), url("../img/additional-product-promo-background-mobile.jpg");
+      background-position: right top;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
   }
 }
 
@@ -28,22 +40,46 @@
 .main-header--form {
   border-bottom: 1px solid #e6e6e6;
 
+  &::before {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    background: none;
     padding: 53px 110px 74px;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
-.main-header__logo-picture {
-  display: flex;
+.main-header__wrapper {
+  margin: 0 auto;
+  width: $mobile-width;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: $tablet-width;
+    padding: 24px 30px 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding: 53px 110px 29px;
+  }
 }
 
-.main-header__logo-text {
+.main-header__logo {
   display: flex;
-  margin: 13px 0 7px;
-  color: #111111;
+  margin: 11px 20px 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
 }

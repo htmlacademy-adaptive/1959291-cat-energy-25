@@ -1,10 +1,12 @@
 // общие стили
+@import "./global/global";
 @import "./global/fonts";
 @import "./global/variables";
-@import "./global/global";
+@import "./global/mixins";
 
 // страница index.html
 @import "./blocks/page";
+@import "./blocks/nojs";
 @import "./blocks/main-header";
 @import "./blocks/main-nav";
 @import "./blocks/main-container";
@@ -23,7 +25,4 @@
 @import "./blocks/additional-product";
 
 // страница формы
-@import "./blocks/page-form";
 @import "./blocks/form";
-@import "./blocks/radio";
-@import "./blocks/checkbox";

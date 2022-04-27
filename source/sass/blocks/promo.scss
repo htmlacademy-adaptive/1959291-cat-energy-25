@@ -1,29 +1,43 @@
-.promo {
+.promo__wrapper {
+  margin: 0 auto 20px;
+  width: $mobile-width;
+  box-sizing: border-box;
   position: relative;
-  display: flex;
-  flex-direction: column;
+  background-image: url("../img/promo-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 50% 80%;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    padding-bottom: 526px;
+    width: $tablet-width;
+    background-image: url("../img/promo-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+  }
 
   @media (min-width: $desktop-width) {
-    margin: 0 110px;
-    margin-top: -553px;
+    margin: 0 auto 82px;
+    padding-bottom: 125px;
+    width: $desktop-width;
+    background-image: url("../img/promo-desktop.png");
+    background-repeat: no-repeat;
+    background-position: 63% top;
   }
 }
 
 .promo__header {
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-promo-background.jpg");
-  background-size: 320px 302px;
-  background-repeat: no-repeat;
-  padding: 27px 20px 164px;
+  padding: 27px 15px 0 16px;
+  margin-bottom: 302px;
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    background: none;
-    padding: 0 207px 20px 87px;
+    padding: 0 207px 49px 117px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    background: none;
-    padding: 82px 716px 52px 80px;
+    padding: 82px 836px 52px 190px;
   }
 }
 
@@ -50,7 +64,7 @@
 .promo__description {
   @include zero-indent;
   font-size: 14px;
-  line-height: 100%;
+  line-height: 1;
   text-transform: uppercase;
   text-align: center;
 
@@ -59,58 +73,26 @@
     color: #000000;
     text-align: left;
   }
-
-  @media (min-width: $desktop-width) {
-    font-size: 20px;
-    color: #000000;
-    text-align: left;
-  }
-}
-
-.promo-image {
-  display: flex;
-  margin: -135px 20px 3px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 auto;
-    width: 709px;
-    height: 609px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
-    position: absolute;
-    right: 220px;
-    width: 552px;
-    height: 499px;
-  }
 }
 
 .promo__button {
   @include button;
   margin: 0 20px;
-  margin-bottom: 20px;
   padding: 11px 44px;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 129%;
+  line-height: 1.29;
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    position: absolute;
-    top: 230px;
-    left: 90px;
+    margin-left: 117px;
+    width: 244px;
     font-size: 20px;
-    line-height: 109%;
+    line-height: 1.09;
     padding: 14px 26px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto 267px 80px;
-    margin-right: auto;
-    position: static;
-    font-size: 20px;
-    line-height: 109%;
+    margin-left: 190px;
     padding: 14px 26px;
   }
 }

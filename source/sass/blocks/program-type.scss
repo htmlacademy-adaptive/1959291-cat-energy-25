@@ -1,5 +1,22 @@
+.program-type {
+  margin: 0 auto 20px;
+  width: $mobile-width;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    margin: 0 auto 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    margin: 0 auto 71px;
+  }
+}
+
 .program-type__list {
   @include zero-indent;
+  margin: 0 20px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
@@ -7,32 +24,31 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
     margin: 0 110px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
   }
 }
 
 .program-type__item {
   background: #f2f2f2;
-  margin: 20px;
   padding: 30px 20px 19px 20px;
   position: relative;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media (min-width: $tablet-width) {
-    margin: 0;
     margin-bottom: 30px;
-    padding: 77px 316px 57px 52px;
+    padding: 77px 316px 48px 53px;
   }
 
   @media (min-width: $desktop-width) {
-    box-sizing: border-box;
-    width: 570px;
-    padding: 77px 52px 55px;
-
-    &:not(:last-child) {
-      margin-right: 80px;
-    }
+    margin: 0;
+    padding: 77px 51px 55px 52px;
   }
 }
 
@@ -49,24 +65,60 @@
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    transform: scale(4);
-    // положение считается от начального размера блока, к положению макета добавим 75px
-    // макет top 92, left 446
-    top: 167px;
-    left: 521px;
+    width: 200px;
+    height: 200px;
+    top: 91px;
+    left: 446px;
   }
 
   @media (min-width: $desktop-width) {
-    transform: scale(2);
-    // положение считается от начального размера блока, к положению макета добавим 25px
-    // макет top 41, left 52
-    top: 66px;
-    left: 76px;
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
   }
 }
 
 .program-type__svg {
   position: absolute;
+}
+
+.program-type__svg--loss {
+  top: -3px;
+  left: 7px;
+
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    height: 194px;
+    top: -11px;
+    left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 97px;
+    top: -6px;
+    left: 15px;
+  }
+}
+
+.program-type__svg--gain {
+  top: 11px;
+  left: -10px;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 112px;
+    top: 44px;
+    left: -36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 56px;
+    top: 20px;
+    left: -19px;
+  }
 }
 
 .program-type__title {
@@ -83,7 +135,7 @@
     margin: 0;
     margin-bottom: 24px;
     font-size: 36px;
-    line-height: 100%;
+    line-height: 1;
   }
 
   @media (min-width: $desktop-width) {
@@ -99,19 +151,19 @@
   font-family: $font-arial;
   font-weight: 400;
   font-size: 14px;
-  line-height: 129%;
+  line-height: 1.29;
   color: #444444;
   position: relative;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 48px;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.5;
     color: #000000;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 23px;
+    margin-bottom: 27px;
   }
 }
 

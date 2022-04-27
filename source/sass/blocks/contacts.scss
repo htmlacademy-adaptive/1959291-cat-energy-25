@@ -1,19 +1,20 @@
-.contacts--catalog {
-  background-color: #f2f2f2;
-}
-
+.contacts--catalog,
 .contacts--form {
   background-color: #f2f2f2;
 }
 
 .contacts__wrapper {
-  padding-top: 26px;
+  margin: 0 auto;
+  width: $mobile-width;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    padding-top: 56px;
+    width: $tablet-width;
+    padding: 56px 70px;
   }
 
   @media (min-width: $desktop-width) {
+    width: $desktop-width;
     position: relative;
     padding: 0;
   }
@@ -22,14 +23,14 @@
 .contacts__text-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px 26px;
+  padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 70px 56px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 56px 80px;
+    padding: 56px 75px 56px 80px;
     box-sizing: border-box;
     width: 565px;
     position: absolute;
@@ -100,6 +101,8 @@
   width: 100%;
   height: 362px;
   border: 0;
+  // белая полоска внизу карты
+  margin-bottom: -5px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
