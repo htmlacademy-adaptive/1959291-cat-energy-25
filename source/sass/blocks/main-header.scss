@@ -8,7 +8,7 @@
     position: absolute;
     top: 0;
     background-image: linear-gradient(to left, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/header-mobile.jpg");
-    background-position: 50% 55px;
+    background-position: 50% 66px;
     background-repeat: no-repeat;
     z-index: -1;
   }
@@ -77,9 +77,18 @@
 
 .main-header__logo {
   display: flex;
-  margin: 11px 20px 17px;
+  padding: 11px 20px 17px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
 
   @media (min-width: $tablet-width) {
-    margin-left: 0;
+    margin-left: -20px;
   }
 }

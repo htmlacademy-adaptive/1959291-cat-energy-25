@@ -1,7 +1,13 @@
 .social {
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    max-width: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 500px;
   }
 }
 
@@ -30,4 +36,12 @@
   display: flex;
   text-decoration: none;
   color: #666666;
+
+  &:hover {
+    color: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

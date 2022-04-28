@@ -4,22 +4,11 @@
   padding: 0;
 }
 
-// View ports временный
-@mixin view-port {
-  @media (min-width: $tablet-width) {
-    width: $tablet-width;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: $desktop-width;
-  }
-}
-
 // кнопка
 @mixin button {
   @include zero-indent;
   font-family: inherit;
-  display: inline-flex;
+  display: flex;
   box-sizing: border-box;
   flex-wrap: wrap;
   justify-content: center;
@@ -30,6 +19,14 @@
   background-color: #68b738;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba($color: #ffffff, $alpha: 0.3);
+  }
 }
 
 // input before

@@ -276,6 +276,27 @@
     padding: 0 10px;
     font-size: 20px;
     line-height: 1.5;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-image: url("../img/example-button-line-background.svg");
+      background-repeat: repeat-x;
+    }
+
+    &:hover {
+      &::after {
+        background: rgba(0, 0, 0, 0.24);
+      }
+    }
+
+    &:active {
+      &::after {
+        background: none;
+      }
+    }
   }
 }
 
@@ -312,8 +333,7 @@
 }
 
 .example__button {
-  @include zero-indent;
-  display: none;
+  @include button;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -325,6 +345,7 @@
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 
   &::before {
     position: absolute;
@@ -332,7 +353,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     content: "";
-    box-sizing: border-box;
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -341,5 +361,14 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+  }
+
+  &:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+  }
+
+  &:active {
+    border-color: #68b738;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   }
 }

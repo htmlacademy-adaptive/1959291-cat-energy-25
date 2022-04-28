@@ -57,6 +57,15 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+
+  &:hover {
+    background: none;
+    opacity: 0.8;
+  }
+
+  &:active {
+    color: rgba($color: #000000, $alpha: 0.3);
+  }
 }
 
 .main-nav__toggle::before {
@@ -79,15 +88,16 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     border-bottom: none;
-    max-width: 450px;
+    max-width: 480px;
+    margin-right: -16px;
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
     border-bottom: none;
-    max-width: 500px;
+    max-width: 625px;
   }
 }
 
@@ -99,19 +109,6 @@
   @media (min-width: $tablet-width) {
     border-top: none;
     padding: 0;
-
-    &:not(:last-child) {
-      margin-right: 33px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    border-top: none;
-    padding: 0;
-
-    &:not(:last-child) {
-      margin-right: 33px;
-    }
   }
 }
 
@@ -130,19 +127,39 @@
   cursor: pointer;
   position: relative;
 
+  &:hover {
+    color: rgba($color: #000000, $alpha: 0.8);
+  }
+
+  &:active {
+    color: rgba($color: #000000, $alpha: 0.3);
+  }
+
   @media (min-width: $tablet-width) {
+    // паддинг снизу и расстояние до полоски текущей страницы, через переменную
+    --offset: 12px;
     font-weight: 400;
     font-size: 18px;
     line-height: 133%;
-    padding: 18px 0 10px;
+    padding: 18px 10px var(--offset);
+    margin: 0 2px;
   }
 
   @media (min-width: $desktop-width) {
+    --offset: 8px;
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
     color: #ffffff;
-    padding: 16px 0 8px;
+    padding: 16px 16px var(--offset);
+
+    &:hover {
+      color: rgba($color: #ffffff, $alpha: 0.6);
+    }
+
+    &:active {
+      color: rgba($color: #ffffff, $alpha: 0.3);
+    }
   }
 }
 
@@ -152,26 +169,28 @@
     color: #000000;
   }
 
-  @media (min-width: $desktop-width) {
-    color: #000000;
+  &:hover {
+    color: rgba($color: #000000, $alpha: 0.8);
+  }
+
+  &:active {
+    color: rgba($color: #000000, $alpha: 0.3);
   }
 }
 
 .main-nav__link--current {
   @media (min-width: $tablet-width) {
-    &::before {
+    &::after {
       content: "";
       width: 100%;
       height: 2px;
       background-color: #68b738;
-      position: absolute;
-      bottom: 0;
-      left: 0;
+      transform: translateY(var(--offset));
     }
   }
 
   @media (min-width: $desktop-width) {
-    &::before {
+    &::after {
       background-color: #ffffff;
     }
   }
@@ -180,7 +199,7 @@
 .main-nav--catalog .main-nav__link--current,
 .main-nav--form .main-nav__link--current {
   @media (min-width: $desktop-width) {
-    &::before {
+    &::after {
       background-color: #68b738;
     }
   }
