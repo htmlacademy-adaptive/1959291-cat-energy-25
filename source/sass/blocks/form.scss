@@ -278,6 +278,14 @@
   }
 }
 
+.form__input:focus-visible + .form__icon {
+  color: #68b738;
+}
+
+.form__input:invalid + .form__icon {
+  color: #ff8282;
+}
+
 .form__input--radio {
   @include visually-hidden;
 
