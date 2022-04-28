@@ -15,7 +15,7 @@
 
 .example__wrapper {
   margin: 0 auto;
-  padding: 25px 20px;
+  padding: 25px 20px 42px;
   width: $mobile-width;
   box-sizing: border-box;
 
@@ -103,7 +103,7 @@
 .example__list {
   @include zero-indent;
   margin-top: 20px;
-  margin-bottom: 39px;
+  margin-bottom: 34px;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -140,10 +140,11 @@
 
 .example__item-value {
   @include zero-indent;
-  padding: 15px 5px 18px;
+  padding: 13px 5px 16px;
   font-size: 24px;
   line-height: 1;
   text-align: center;
+  text-transform: uppercase;
   word-break: break-all;
   color: #000000;
 
@@ -160,7 +161,8 @@
   box-sizing: border-box;
   width: 87px;
   position: absolute;
-  top: 47px;
+  top: 44px;
+  font-family: $font-arial;
   font-size: 12px;
   line-height: 100%;
   text-transform: lowercase;
@@ -228,15 +230,18 @@
 
 .example__pictures-wrapper {
   @include zero-indent;
+  margin-bottom: 17px;
   position: relative;
   overflow: hidden;
   width: 280px;
-  height: 277px;
+  height: 232px;
+  --slider-width: 0;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto 25px;
     width: 592px;
     height: 511px;
+    --slider-width: 50%;
   }
 
   @media (min-width: $desktop-width) {
@@ -267,7 +272,7 @@
 
 .example__picture {
   width: 280px;
-  height: 277px;
+  height: 232px;
 
   @media (min-width: $tablet-width) {
     width: 592px;
@@ -276,7 +281,7 @@
 }
 
 .example__scale {
-  padding: 0 35px;
+  padding: 0 25px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -295,18 +300,19 @@
 .example__text {
   @include button;
   background: none;
-  padding: 3px 6px;
+  padding: 3px 0;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
   // т.к. слова "было" и "стало" разной длины, ползунок на 50% не совпадает с центром
   // картинки? поэтому зададим одинаковый размер у блоков под текст
-  min-width: 70px;
+  min-width: 72px;
 
   @media (min-width: $tablet-width) {
     padding: 0 10px;
     font-size: 20px;
     line-height: 1.5;
+    min-width: 70px;
 
     &::after {
       content: "";
@@ -333,7 +339,7 @@
 
 .example__bar {
   position: relative;
-  margin: 0 13px;
+  margin: 0;
   display: inline-flex;
   align-items: center;
   box-sizing: border-box;

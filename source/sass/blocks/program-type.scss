@@ -1,5 +1,5 @@
 .program-type {
-  margin: 0 auto 20px;
+  margin: 0 auto 18px;
   width: $mobile-width;
   box-sizing: border-box;
 
@@ -189,7 +189,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-  padding-right: 25px;
+  padding-right: 16px;
   position: relative;
   background-color: #f2f2f2;
   z-index: 1;
@@ -197,8 +197,8 @@
   &::before {
     content: "";
     position: absolute;
-    right: -25px;
-    top: 8px;
+    right: -24px;
+    top: 6px;
     width: 32px;
     height: 12px;
     background-image: url("../img/program-type-link-icon.svg");
@@ -221,15 +221,3 @@
     line-height: 150%;
   }
 }
-
-// .program-type__link-icon {
-//   position: absolute;
-//   right: -15px;
-//   transform: translateX(100%);
-//   top: 7px;
-
-//   @media (min-width: $tablet-width) {
-//     right: -25px;
-//     top: 9px;
-//   }
-// }
