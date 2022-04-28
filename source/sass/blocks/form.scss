@@ -270,9 +270,11 @@
     outline: 1px solid #444444;
   }
 
-  &:invalid {
-    border-color: #ff8282;
-    outline: 1px solid #ff8282;
+  &:required {
+    &:invalid {
+      border-color: #ff8282;
+      outline: 1px solid #ff8282;
+    }
   }
 }
 
