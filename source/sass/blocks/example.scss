@@ -1,4 +1,7 @@
 .example {
+  //  переменная отвечает за переключение слайдера
+  --slider-width: 50%;
+
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
@@ -225,6 +228,10 @@
 
 .example__pictures-wrapper {
   @include zero-indent;
+  position: relative;
+  overflow: hidden;
+  width: 280px;
+  height: 277px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto 25px;
@@ -237,11 +244,32 @@
   }
 }
 
-.example__picture-img {
+.example__picture-resize {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.example__picture-resize--before {
+  left: 0;
+  width: calc(100% - var(--slider-width));
+}
+
+.example__picture-resize--after {
   display: flex;
+  flex-direction: row-reverse;
+  right: 0;
+  width: var(--slider-width);
+}
+
+.example__picture {
+  width: 280px;
+  height: 277px;
 
   @media (min-width: $tablet-width) {
-    object-fit: contain;
     width: 592px;
     height: 511px;
   }
@@ -271,6 +299,9 @@
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+  // т.к. слова "было" и "стало" разной длины, ползунок на 50% не совпадает с центром
+  // картинки? поэтому зададим одинаковый размер у блоков под текст
+  min-width: 70px;
 
   @media (min-width: $tablet-width) {
     padding: 0 10px;
@@ -336,7 +367,7 @@
   @include button;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: var(--slider-width);
   transform: translate(-50%, -50%);
   width: 34px;
   height: 34px;
@@ -346,6 +377,7 @@
   border: 1px solid #cdcdcd;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
   cursor: pointer;
+  display: none;
 
   &::before {
     position: absolute;
@@ -365,10 +397,12 @@
 
   &:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+    background-color: #ffffff;
   }
 
   &:active {
     border-color: #68b738;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
   }
 }

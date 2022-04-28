@@ -92,12 +92,26 @@
   }
 }
 
-
-.product__picture--position {
-  align-self: center;
+.product__picture {
+  width: 84px;
+  height: 100px;
 
   @media (min-width: $tablet-width) {
-    align-self: flex-end;
+    width: 168px;
+    height: 200px;
+  }
+}
+
+.product__picture--position {
+  width: 68px;
+  height: 86px;
+  margin-bottom: 4px;
+
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    width: 161px;
+    height: 172px;
   }
 }
 
