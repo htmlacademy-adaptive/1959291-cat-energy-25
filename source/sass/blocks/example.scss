@@ -5,7 +5,7 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(to bottom, #ffffff 619px, #eaeaea 619px);
+    background-image: linear-gradient(to bottom, #ffffff 575px, #eaeaea 575px);
   }
 
   @media (min-width: $desktop-width) {
@@ -21,7 +21,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    padding: 0 30px 56px;
+    padding: 0 30px 59px;
     width: $tablet-width;
   }
 
@@ -47,11 +47,10 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 1;
-    margin-bottom: 128px;
+    margin-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
-    // padding: 43px 0 146px;
     margin: 43px 10px 146px 0;
     grid-column: 1/2;
   }
@@ -72,6 +71,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-right: 155px;
     margin-bottom: 69px;
     grid-column: 1/2;
   }
@@ -87,7 +87,7 @@
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
+    margin-bottom: 85px;
     display: flex;
     justify-content: space-between;
   }
@@ -149,7 +149,7 @@
   color: #000000;
 
   @media (min-width: $tablet-width) {
-    padding: 15px 5px 20px;
+    padding: 14px 5px 18px;
     font-size: 30px;
     line-height: 1.23;
   }
@@ -177,7 +177,8 @@
     background-color: #ffffff;
     width: auto;
     font-size: 14px;
-    top: 63px;
+    top: 62px;
+    padding: 0 8px;
   }
 
   @media (min-width: $desktop-width) {
@@ -238,14 +239,10 @@
   --slider-width: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto 25px;
+    margin: 0 auto 30px;
     width: 592px;
     height: 511px;
     --slider-width: 50%;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
   }
 }
 
@@ -324,12 +321,16 @@
     }
 
     &:hover {
+      background: none;
+
       &::after {
         background: rgba(0, 0, 0, 0.24);
       }
     }
 
     &:active {
+      color: #000000;
+
       &::after {
         background: none;
       }
@@ -353,6 +354,10 @@
     height: 6px;
     border: none;
     background-color: #dcdcdc;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 15px;
   }
 }
 
