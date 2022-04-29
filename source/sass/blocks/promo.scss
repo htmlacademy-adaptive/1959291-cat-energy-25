@@ -1,3 +1,11 @@
+.promo {
+  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 63%, #ffffff 63%);
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+}
+
 .promo__wrapper {
   margin: 0 auto 20px;
   width: $mobile-width;
@@ -45,6 +53,7 @@
   padding: 27px 15px 0 16px;
   margin-bottom: 302px;
   color: #ffffff;
+  // background-color: rgba(104, 183, 56, 0.85);
 
   @media (min-width: $tablet-width) {
     padding: 0 207px 48px 117px;

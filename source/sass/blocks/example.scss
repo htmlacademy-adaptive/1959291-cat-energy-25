@@ -270,6 +270,8 @@
 .example__picture {
   width: 280px;
   height: 232px;
+  max-width: none;
+  object-fit: fill;
 
   @media (min-width: $tablet-width) {
     width: 592px;
