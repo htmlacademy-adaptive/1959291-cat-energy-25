@@ -11,4 +11,6 @@
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   color: #000000;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
 }
