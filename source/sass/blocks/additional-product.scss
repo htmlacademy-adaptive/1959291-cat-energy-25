@@ -98,7 +98,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-    padding: 26px 38px 27px;
+    padding: 20px 38px 27px;
     grid-template-columns: 1fr 200px 70px;
     row-gap: 25px;
     column-gap: 23px;
@@ -180,7 +180,7 @@
   grid-column: 1 / -1;
   margin-top: 2px;
   margin-bottom: 1px;
-  padding: 10px 0;
+  padding: 10px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -282,7 +282,7 @@
 
   @media (min-width: $desktop-width) {
     top: 56px;
-    left: 50%;
+    left: 51%;
     transform: translateX(-50%);
   }
 }

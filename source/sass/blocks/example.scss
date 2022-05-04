@@ -5,7 +5,7 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(to bottom, #ffffff 619px, #eaeaea 619px);
+    background-image: linear-gradient(to bottom, #ffffff 575px, #eaeaea 575px);
   }
 
   @media (min-width: $desktop-width) {
@@ -15,13 +15,13 @@
 
 .example__wrapper {
   margin: 0 auto;
-  padding: 25px 20px;
+  padding: 25px 20px 42px;
   width: $mobile-width;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    padding: 0 30px 56px;
+    padding: 0 30px 59px;
     width: $tablet-width;
   }
 
@@ -47,11 +47,10 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 1;
-    margin-bottom: 128px;
+    margin-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
-    // padding: 43px 0 146px;
     margin: 43px 10px 146px 0;
     grid-column: 1/2;
   }
@@ -72,6 +71,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-right: 155px;
     margin-bottom: 69px;
     grid-column: 1/2;
   }
@@ -87,7 +87,7 @@
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
+    margin-bottom: 85px;
     display: flex;
     justify-content: space-between;
   }
@@ -103,7 +103,7 @@
 .example__list {
   @include zero-indent;
   margin-top: 20px;
-  margin-bottom: 39px;
+  margin-bottom: 34px;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -140,15 +140,16 @@
 
 .example__item-value {
   @include zero-indent;
-  padding: 15px 5px 18px;
+  padding: 13px 5px 16px;
   font-size: 24px;
   line-height: 1;
   text-align: center;
+  text-transform: uppercase;
   word-break: break-all;
   color: #000000;
 
   @media (min-width: $tablet-width) {
-    padding: 15px 5px 20px;
+    padding: 14px 5px 18px;
     font-size: 30px;
     line-height: 1.23;
   }
@@ -160,7 +161,8 @@
   box-sizing: border-box;
   width: 87px;
   position: absolute;
-  top: 47px;
+  top: 44px;
+  font-family: $font-arial;
   font-size: 12px;
   line-height: 100%;
   text-transform: lowercase;
@@ -175,7 +177,8 @@
     background-color: #ffffff;
     width: auto;
     font-size: 14px;
-    top: 63px;
+    top: 62px;
+    padding: 0 8px;
   }
 
   @media (min-width: $desktop-width) {
@@ -228,19 +231,18 @@
 
 .example__pictures-wrapper {
   @include zero-indent;
+  margin-bottom: 17px;
   position: relative;
   overflow: hidden;
   width: 280px;
-  height: 277px;
+  height: 232px;
+  --slider-width: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto 25px;
+    margin: 0 auto 30px;
     width: 592px;
     height: 511px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
+    --slider-width: 50%;
   }
 }
 
@@ -267,7 +269,9 @@
 
 .example__picture {
   width: 280px;
-  height: 277px;
+  height: 232px;
+  max-width: none;
+  object-fit: fill;
 
   @media (min-width: $tablet-width) {
     width: 592px;
@@ -276,7 +280,7 @@
 }
 
 .example__scale {
-  padding: 0 35px;
+  padding: 0 25px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -295,18 +299,19 @@
 .example__text {
   @include button;
   background: none;
-  padding: 3px 6px;
+  padding: 3px 0;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
   // т.к. слова "было" и "стало" разной длины, ползунок на 50% не совпадает с центром
   // картинки? поэтому зададим одинаковый размер у блоков под текст
-  min-width: 70px;
+  min-width: 72px;
 
   @media (min-width: $tablet-width) {
     padding: 0 10px;
     font-size: 20px;
     line-height: 1.5;
+    min-width: 70px;
 
     &::after {
       content: "";
@@ -318,12 +323,16 @@
     }
 
     &:hover {
+      background: none;
+
       &::after {
         background: rgba(0, 0, 0, 0.24);
       }
     }
 
     &:active {
+      color: #000000;
+
       &::after {
         background: none;
       }
@@ -333,7 +342,7 @@
 
 .example__bar {
   position: relative;
-  margin: 0 13px;
+  margin: 0;
   display: inline-flex;
   align-items: center;
   box-sizing: border-box;
@@ -347,6 +356,10 @@
     height: 6px;
     border: none;
     background-color: #dcdcdc;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 15px;
   }
 }
 

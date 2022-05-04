@@ -126,6 +126,8 @@
   color: #000000;
   cursor: pointer;
   position: relative;
+  // паддинг снизу и расстояние до полоски текущей страницы, через переменную
+  --offset: 8px;
 
   &:hover {
     color: rgba($color: #000000, $alpha: 0.8);
@@ -136,22 +138,21 @@
   }
 
   @media (min-width: $tablet-width) {
-    // паддинг снизу и расстояние до полоски текущей страницы, через переменную
-    --offset: 12px;
+    padding: 18px 10px var(--offset);
+    margin: 0 8px;
     font-weight: 400;
     font-size: 18px;
     line-height: 133%;
-    padding: 18px 10px var(--offset);
-    margin: 0 2px;
   }
 
   @media (min-width: $desktop-width) {
-    --offset: 8px;
+    padding: 16px 17px var(--offset);
+    margin: 0;
     font-weight: 400;
     font-size: 20px;
-    line-height: 150%;
+    line-height: 1.5;
     color: #ffffff;
-    padding: 16px 16px var(--offset);
+
 
     &:hover {
       color: rgba($color: #ffffff, $alpha: 0.6);
@@ -192,6 +193,7 @@
   @media (min-width: $desktop-width) {
     &::after {
       background-color: #ffffff;
+      transform: translateY(var(--offset));
     }
   }
 }
