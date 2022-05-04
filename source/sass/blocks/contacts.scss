@@ -90,6 +90,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     text-align: right;
+    max-width: 160px;
   }
 
   @media (min-width: $desktop-width) {

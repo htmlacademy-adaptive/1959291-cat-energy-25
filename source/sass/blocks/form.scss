@@ -110,9 +110,10 @@
   @include zero-indent;
   font-weight: 400;
   display: inline-block;
-  padding-right: 18px;
-  padding-bottom: 35px;
-  padding-left: 20px;
+  padding: 0 18px 35px 20px;
+  // padding-right: 18px;
+  // padding-bottom: 35px;
+  // padding-left: 20px;
   font-size: 24px;
   line-height: 1.08;
   color: #000000;
@@ -268,12 +269,10 @@
 
 .form__label--radio,
 .form__label--checkbox {
-  padding-left: 45px;
-  height: 30px;
+  padding: 6px 0 6px 45px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 60px;
-    height: 40px;
+    padding: 5px 0 5px 60px;
   }
 }
 
@@ -417,7 +416,7 @@
 
 .form__textarea {
   margin: 0;
-  padding: 10px;
+  padding: 14px 10px 6px 10px;
   font-size: 16px;
   line-height: 1.12;
   text-align: center;
