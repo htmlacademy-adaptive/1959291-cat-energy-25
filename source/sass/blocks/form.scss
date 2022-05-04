@@ -355,14 +355,16 @@
     @include input-before;
     width: 30px;
     height: 30px;
-    background-image: url("../img/mark.svg");
+    background-image: url("../img/icons/mark.svg");
+    // background-image: url("../img/icons/sprite.svg#mark");
     background-repeat: no-repeat;
     background-position: 6px 8px;
 
     @media (min-width: $tablet-width) {
       width: 40px;
       height: 40px;
-      background-image: url("../img/mark-large.svg");
+      // background-image: url("../img/icons/sprite.svg#mark-large");
+      background-image: url("../img/icons/mark-large.svg");
       background-position: 9px 11px;
     }
   }
