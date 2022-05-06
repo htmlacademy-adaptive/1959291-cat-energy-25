@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи. Каталог продукции.</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -50,8 +50,15 @@
               <div class="product__card-wrapper">
                 <div class="product__picture-wrapper">
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/product-1-tablet.png 1x, img/product-1-tablet@2x.png 2x">
-                    <img class="product__picture product__picture--position" src="img/product-1-mobile.png" srcset="img/product-1-mobile@2x.png 2x"
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/product-1-tablet.webp 1x, img/product-1-tablet@2x.webp 2x">
+                    <source type="image/png" media="(min-width: 768px)"
+                      srcset="img/product-1-tablet.png 1x, img/product-1-tablet@2x.png 2x">
+                    <source type="image/webp"
+                      srcset="img/product-1-mobile.webp 1x, , img/product-1-mobile@2x.webp 2x">
+                    <img class="product__picture product__picture--position"
+                      src="img/product-1-mobile.png"
+                      srcset="img/product-1-mobile@2x.png 2x"
                       alt="Cat Energy PRO Курица 500 грамм.">
                   </picture>
                   </div>
@@ -79,10 +86,17 @@
               <div class="product__card-wrapper">
                 <div class="product__picture-wrapper">
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/product-1-2-tablet.png 1x, img/product-1-2-tablet@2x.png 2x">
-                    <img class="product__picture" src="img/product-1-2-mobile.png" srcset="img/product-1-2-mobile@2x.png 2x"
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/product-1-2-tablet.webp 1x, img/product-1-2-tablet@2x.webp 2x">
+                    <source type="image/png" media="(min-width: 768px)"
+                      srcset="img/product-1-2-tablet.png 1x, img/product-1-2-tablet@2x.png 2x">
+                    <source type="image/webp"
+                      srcset="img/product-1-2-mobile.webp 1x, , img/product-1-2-mobile@2x.webp 2x">
+                    <img class="product__picture product__picture--position"
+                      src="img/product-1-2-mobile.png"
+                      srcset="img/product-1-2-mobile@2x.png 2x"
                       alt="Cat Energy PRO Курица 1000 грамм.">
-                    </picture>
+                  </picture>
                 </div>
                 <div class="product__description">
                   <h3 class="product__name">Cat Energy PRO 1000 г</h3>
@@ -107,8 +121,15 @@
               <div class="product__card-wrapper">
                 <div class="product__picture-wrapper">
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/product-2-tablet.png 1x, img/product-2-tablet@2x.png 2x">
-                    <img class="product__picture product__picture--position" src="img/product-2-mobile.png" srcset="img/product-2-mobile@2x.png 2x"
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/product-2-tablet.webp 1x, img/product-2-tablet@2x.webp 2x">
+                    <source type="image/png" media="(min-width: 768px)"
+                      srcset="img/product-2-tablet.png 1x, img/product-2-tablet@2x.png 2x">
+                    <source type="image/webp"
+                      srcset="img/product-2-mobile.webp 1x, , img/product-2-mobile@2x.webp 2x">
+                    <img class="product__picture product__picture--position"
+                      src="img/product-2-mobile.png"
+                      srcset="img/product-2-mobile@2x.png 2x"
                       alt="Cat Energy PRO Рыба 500 грамм.">
                   </picture>
                 </div>
@@ -136,10 +157,17 @@
               <div class="product__card-wrapper">
                 <div class="product__picture-wrapper">
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/product-2-2-tablet.png 1x, img/product-2-2-tablet@2x.png 2x">
-                    <img class="product__picture" src="img/product-2-2-mobile.png" srcset="img/product-2-2-mobile@2x.png 2x"
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/product-2-2-tablet.webp 1x, img/product-2-2-tablet@2x.webp 2x">
+                    <source type="image/png" media="(min-width: 768px)"
+                      srcset="img/product-2-2-tablet.png 1x, img/product-2-2-tablet@2x.png 2x">
+                    <source type="image/webp"
+                      srcset="img/product-2-2-mobile.webp 1x, , img/product-2-2-mobile@2x.webp 2x">
+                    <img class="product__picture product__picture--position"
+                      src="img/product-2-2-mobile.png"
+                      srcset="img/product-2-2-mobile@2x.png 2x"
                       alt="Cat Energy PRO Рыба 1000 грамм.">
-                    </picture>
+                  </picture>
                 </div>
                 <div class="product__description">
                   <h3 class="product__name">Cat Energy PRO 1000 г</h3>
@@ -165,8 +193,15 @@
               <div class="product__card-wrapper">
                 <div class="product__picture-wrapper">
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/product-3-tablet.png 1x, img/product-3-tablet@2x.png 2x">
-                    <img class="product__picture product__picture--position" src="img/product-3-mobile.png" srcset="img/product-3-mobile@2x.png 2x"
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/product-3-tablet.webp 1x, img/product-3-tablet@2x.webp 2x">
+                    <source type="image/png" media="(min-width: 768px)"
+                      srcset="img/product-3-tablet.png 1x, img/product-3-tablet@2x.png 2x">
+                    <source type="image/webp"
+                      srcset="img/product-3-mobile.webp 1x, , img/product-3-mobile@2x.webp 2x">
+                    <img class="product__picture product__picture--position"
+                      src="img/product-3-mobile.png"
+                      srcset="img/product-3-mobile@2x.png 2x"
                       alt="Cat Energy slim Гречка 500 грамм.">
                   </picture>
                 </div>
@@ -194,10 +229,17 @@
               <div class="product__card-wrapper">
                 <div class="product__picture-wrapper">
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/product-3-2-tablet.png 1x, img/product-3-2-tablet@2x.png 2x">
-                    <img class="product__picture" src="img/product-3-2-mobile.png" srcset="img/product-3-2-mobile@2x.png 2x"
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/product-3-2-tablet.webp 1x, img/product-3-2-tablet@2x.webp 2x">
+                    <source type="image/png" media="(min-width: 768px)"
+                      srcset="img/product-3-2-tablet.png 1x, img/product-3-2-tablet@2x.png 2x">
+                    <source type="image/webp"
+                      srcset="img/product-3-2-mobile.webp 1x, , img/product-3-2-mobile@2x.webp 2x">
+                    <img class="product__picture product__picture--position"
+                      src="img/product-3-2-mobile.png"
+                      srcset="img/product-3-2-mobile@2x.png 2x"
                       alt="Cat Energy slim Гречка 1000 грамм.">
-                    </picture>
+                  </picture>
                 </div>
                 <div class="product__description">
                   <h3 class="product__name">Cat Energy slim 1000 г</h3>
@@ -223,10 +265,17 @@
               <div class="product__card-wrapper">
                 <div class="product__picture-wrapper">
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/product-4-tablet.png 1x, img/product-4-tablet@2x.png 2x">
-                    <img class="product__picture product__picture--position" src="img/product-4-mobile.png" srcset="img/product-4-mobile@2x.png 2x"
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/product-4-tablet.webp 1x, img/product-4-tablet@2x.webp 2x">
+                    <source type="image/png" media="(min-width: 768px)"
+                      srcset="img/product-4-tablet.png 1x, img/product-4-tablet@2x.png 2x">
+                    <source type="image/webp"
+                      srcset="img/product-4-mobile.webp 1x, , img/product-4-mobile@2x.webp 2x">
+                    <img class="product__picture product__picture--position"
+                      src="img/product-4-mobile.png"
+                      srcset="img/product-4-mobile@2x.png 2x"
                       alt="Cat Energy slim Рис 500 грамм.">
-                    </picture>
+                  </picture>
                 </div>
                 <div class="product__description">
                   <h3 class="product__name">Cat Energy slim 500 г</h3>
@@ -294,7 +343,7 @@
             <div class="additional-product__promo-wrapper">
               <h2 class="visually-hidden">Подарок.</h2>
               <svg class="additional-product__promo-icon" aria-hidden="true" role="img" focusable="false" width="78" height="80">
-                <use href="img/icons/sprite.svg#gift"></use>
+                <use href="img/sprite.svg#gift"></use>
               </svg>
               <p class="additional-product__promo-text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
             </div>
@@ -320,7 +369,7 @@
           <a class="main-footer__logo" href="index.html">
             <span class="visually-hidden">Логотип Cat Energy.</span>
             <svg aria-hidden="true" role="img" focusable="false" width="128" height="24" viewBox="0 0 128 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <use href="img/icons/sprite.svg#cat-energy-footer"></use>
+              <use href="img/sprite.svg#cat-energy-footer"></use>
             </svg>
           </a>
         </div>
@@ -331,7 +380,7 @@
               <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">ВКонтакте.</span>
                 <svg aria-hidden="true" role="img" focusable="false" width="27" height="17">
-                  <use href="img/icons/sprite.svg#vk"></use>
+                  <use href="img/sprite.svg#vk"></use>
                 </svg>
               </a>
             </li>
@@ -339,7 +388,7 @@
               <a class="social__link social__link--yt" href="https://www.youtube.com/c/HTMLAcademyRUS">
                 <span class="visually-hidden">Youtube.</span>
                 <svg aria-hidden="true" role="img" focusable="false" width="24" height="19">
-                  <use href="img/icons/sprite.svg#yt"></use>
+                  <use href="img/sprite.svg#yt"></use>
                 </svg>
               </a>
             </li>
@@ -347,24 +396,20 @@
               <a class="social__link social__link--tg" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Telegram.</span>
                 <svg aria-hidden="true" role="img" focusable="false" width="20" height="18">
-                  <use href="img/icons/sprite.svg#tg"></use>
+                  <use href="img/sprite.svg#tg"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </section>
         <div class="main-footer__copyright">
-          <div class="main-footer__copyright-wrapper">
-            <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-              HTML Accademy
-            </a>
-            <a class="main-footer__copyright-link main-footer__copyright-link--logo" href="https://htmlacademy.ru/intensive/adaptive">
-              <span class="visually-hidden">Логотип HTML Academy.</span>
-              <svg aria-hidden="true" role="img" focusable="false" width="27" height="34" viewBox="0 0 27 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <use href="img/icons/sprite.svg#academy-footer"></use>
-              </svg>
-            </a>
-          </div>
+          <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">Логотип HTML Academy.</span>
+            HTML Accademy
+            <svg class="main-footer__copyright-link--logo" aria-hidden="true" role="img" focusable="false" width="27" height="34" viewBox="0 0 27 34" xmlns="http://www.w3.org/2000/svg">
+              <use href="img/sprite.svg#academy-footer"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
