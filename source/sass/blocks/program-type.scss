@@ -204,6 +204,7 @@
     transform: translateY(-50%);
     width: 24px;
     height: 12px;
+    // background-image: url("../img/icons/sprite.svg#program-type-link-icon");
     background-image: url("../img/program-type-link-icon.svg");
     transition: 0.1s;
   }
@@ -211,6 +212,7 @@
   &:hover {
     &::before {
       width: 32px;
+      // background-image: url("../img/icons/sprite.svg#program-type-link-icon-hover");
       background-image: url("../img/program-type-link-icon-hover.svg");
     }
   }
