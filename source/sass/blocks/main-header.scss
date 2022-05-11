@@ -39,7 +39,7 @@
       height: 694px;
       position: absolute;
       top: 0;
-      left: 0;
+      left: 10px;
       background-image: image-set(
         "../img/header-desktop.webp" 1x,
         "../img/header-desktop.jpg" 1x
@@ -103,19 +103,19 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: $tablet-width;
-    padding: 24px 30px 64px;
+    padding: 24px 30px 59px;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    padding: 53px 110px 29px;
+    padding: 54px 110px 24px;
   }
 }
 
 .main-header__logo {
   display: flex;
   flex-wrap: wrap;
-  padding: 10px 20px 17px;
+  padding: 10px 20px 12px;
 
   &:hover {
     opacity: 0.8;
