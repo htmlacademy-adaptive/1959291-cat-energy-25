@@ -208,13 +208,19 @@
     height: 100%;
     position: absolute;
     top: 0;
-    background-image: url("../img/additional-product-promo-background-mobile.png");
+    background-image: image-set(
+      "../img/additional-product-promo-background-mobile.webp" 1x,
+      "../img/additional-product-promo-background-mobile.png" 1x,
+    );
     background-repeat: no-repeat;
     background-position: 50%;
     z-index: -1;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/additional-product-promo-background-mobile@2x.png");
+      background-image: image-set(
+        "../img/additional-product-promo-background-mobile@2x.webp" 2x,
+        "../img/additional-product-promo-background-mobile@2x.png" 2x
+      );
       background-size: 280px auto;
     }
   }
@@ -223,10 +229,16 @@
     margin: 0 30px;
 
     &::before {
-      background-image: url("../img/additional-product-promo-background-tablet.png");
+      background-image: image-set(
+        "../img/additional-product-promo-background-tablet.webp" 1x,
+        "../img/additional-product-promo-background-tablet.png" 1x
+      );
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/additional-product-promo-background-tablet@2x.png");
+        background-image: image-set(
+          "../img/additional-product-promo-background-tablet@2x.webp" 1x,
+          "../img/additional-product-promo-background-tablet@2x.png" 1x,
+        );
         background-size: 707px auto;
       }
     }
@@ -236,10 +248,16 @@
     margin: 0;
 
     &::before {
-      background-image: url("../img/additional-product-promo-background-desktop.png");
+      background-image: image-set(
+        "../img/additional-product-promo-background-desktop.webp" 1x,
+        "../img/additional-product-promo-background-desktop.png" 1x,
+      );
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/additional-product-promo-background-desktop@2x.png");
+        background-image: image-set(
+          "../img/additional-product-promo-background-desktop@2x.webp" 2x,
+          "../img/additional-product-promo-background-desktop@2x.png" 2x
+        );
         background-size: 245px auto;
       }
     }
