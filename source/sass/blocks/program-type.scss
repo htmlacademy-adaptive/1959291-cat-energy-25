@@ -209,16 +209,15 @@
     transform: translateY(-50%);
     width: 24px;
     height: 12px;
-    // background-image: url("../img/icons/sprite.svg#program-type-link-icon");
-    background-image: url("../img/program-type-link-icon.svg");
-    transition: 0.1s;
+    background-color: #000000;
+    clip-path: polygon(0 40%, 70% 40%, 70% 0, 100% 50%, 70% 100%, 70% 60%, 0 60%);
+    transition: 0.3s;
   }
 
   &:hover {
     &::before {
       width: 32px;
-      // background-image: url("../img/icons/sprite.svg#program-type-link-icon-hover");
-      background-image: url("../img/program-type-link-icon-hover.svg");
+      clip-path: polygon(0 40%, 78% 40%, 78% 0, 100% 50%, 78% 100%, 78% 60%, 0 60%);
     }
   }
 
