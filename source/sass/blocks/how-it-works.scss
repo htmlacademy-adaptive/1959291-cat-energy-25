@@ -80,6 +80,12 @@
       right: 15px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(n)::after {
+      right: 12px;
+    }
+  }
 }
 
 .how-it-works__logo {

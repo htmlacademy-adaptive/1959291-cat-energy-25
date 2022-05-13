@@ -84,7 +84,7 @@
 }
 
 .example__data-wrapper {
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 85px;
@@ -304,8 +304,12 @@
   line-height: 20px;
   color: #000000;
   // т.к. слова "было" и "стало" разной длины, ползунок на 50% не совпадает с центром
-  // картинки? поэтому зададим одинаковый размер у блоков под текст
+  // картинки, поэтому зададим одинаковый размер у блоков под текст
   min-width: 72px;
+
+  &:hover {
+    background: none;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0 10px;
@@ -318,13 +322,11 @@
       display: block;
       height: 1px;
       width: 100%;
-      background-image: url("../img/example-button-line-background.svg");
+      background-image: url("data:image/svg+xml,%3Csvg width='2' height='1' viewBox='0 0 2 1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23ADADAD' d='M0 0h1v1H0z'/%3E%3Cpath fill='%23fff' d='M1 0h1v1H1z'/%3E%3C/svg%3E%0A");
       background-repeat: repeat-x;
     }
 
     &:hover {
-      background: none;
-
       &::after {
         background: rgba(0, 0, 0, 0.24);
       }
@@ -364,9 +366,9 @@
 }
 
 .example__bar-data {
-  margin-left: 6px;
+  margin-left: 5px;
   box-sizing: border-box;
-  width: 44.3%;
+  width: 42%;
   height: 6px;
   border-radius: 3px;
   background-color: #68b738;

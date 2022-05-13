@@ -7,28 +7,22 @@
     height: 302px;
     position: absolute;
     top: 100%;
-    background-image: url("../img/header-mobile.jpg");
+    background-image: image-set(
+      "../img/header-mobile.webp" 1x,
+      "../img/header-mobile.jpg" 1x
+    );
     background-repeat: no-repeat;
     background-position: 50%;
     z-index: -1;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/header-mobile@2x.jpg");
+      background-image: image-set(
+        "../img/header-mobile@2x.webp" 2x,
+        "../img/header-mobile@2x.jpg" 2x
+      );
       background-size: 320px auto;
     }
   }
-  // временно перенес зеленый фон к блок промо, в мобильной версии
-  // &::after {
-  //   content: "";
-  //   width: 100%;
-  //   height: 302px;
-  //   position: absolute;
-  //   top: 100%;
-  //   background-image: linear-gradient(to left, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
-  //   background-repeat: no-repeat;
-  //   background-position: 50%;
-  //   z-index: -1;
-  // }
 
   @media (min-width: $tablet-width) {
     &::before,
@@ -45,14 +39,20 @@
       height: 694px;
       position: absolute;
       top: 0;
-      left: 0;
-      background-image: url("../img/header-desktop.jpg");
+      left: 10px;
+      background-image: image-set(
+        "../img/header-desktop.webp" 1x,
+        "../img/header-desktop.jpg" 1x
+      );
       background-position: 49vw top;
       background-repeat: no-repeat;
       z-index: -1;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/header-desktop@2x.jpg");
+        background-image: image-set(
+          "../img/header-desktop@2x.webp" 2x,
+          "../img/header-desktop@2x.jpg" 2x
+        );
         background-size: 1044px auto;
       }
     }
@@ -103,19 +103,19 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: $tablet-width;
-    padding: 24px 30px 64px;
+    padding: 24px 30px 59px;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    padding: 53px 110px 29px;
+    padding: 54px 110px 24px;
   }
 }
 
 .main-header__logo {
   display: flex;
   flex-wrap: wrap;
-  padding: 10px 20px 17px;
+  padding: 10px 20px 12px;
 
   &:hover {
     opacity: 0.8;
@@ -130,7 +130,7 @@
   }
 }
 
-.main-header__logo img {
+.main-header__logo-img {
   @media (min-width: $tablet-width) {
     width: 174px;
     height: 52px;
