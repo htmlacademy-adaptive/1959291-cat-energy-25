@@ -8,16 +8,16 @@
 
   @media (min-width: $desktop-width) {
     max-width: 500px;
+    align-items: flex-start;
   }
 }
 
 .social__list {
   margin: 0;
-  padding: 22px 78px 0 75px;
+  padding: 17px 78px 15px 75px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -27,8 +27,8 @@
 .social__item {
   display: flex;
   align-items: center;
-  margin-bottom: 21px;
-  // отступ последнего элемента
+  margin: 5px 0;
+
   &:not(:last-child) {
     margin-right: 25px;
   }

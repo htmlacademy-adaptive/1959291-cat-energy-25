@@ -13,7 +13,7 @@
     display: grid;
     grid-template-columns: repeat(2, 610px);
     column-gap: 40px;
-    margin-bottom: 85px;
+    margin-bottom: 82px;
   }
 }
 
@@ -111,9 +111,6 @@
   font-weight: 400;
   display: inline-block;
   padding: 0 18px 35px 20px;
-  // padding-right: 18px;
-  // padding-bottom: 35px;
-  // padding-left: 20px;
   font-size: 24px;
   line-height: 1.08;
   color: #000000;
@@ -124,6 +121,7 @@
     br {
       content: "";
     }
+
     margin: 0 30px 76px;
     padding: 0 40px;
     font-size: 36px;
@@ -347,24 +345,32 @@
 
 .form__input--checkbox {
   @include visually-hidden;
+  position: relative;
+}
 
-  &:checked + .form__mark--checkbox::before {
-    @include input-before;
-    width: 30px;
-    height: 30px;
-    background-image: url("img/mark.svg");
-    // background-image: url("img/sprite.svg#mark");
-    background-repeat: no-repeat;
-    background-position: 6px 8px;
+.form__input--checkbox + .form__mark--checkbox::before {
+  @include input-before;
+  position: absolute;
+  z-index: 10;
+  top: 2px;
+  left: 10px;
+  width: 9px;
+  height: 18px;
+  border-bottom: 2px solid #68b738;
+  border-right: 2px solid #68b738;
+  transform: rotate(52deg) skew(10deg) scale(0);
+  transition: transform 0.3s;
 
-    @media (min-width: $tablet-width) {
-      width: 40px;
-      height: 40px;
-      // background-image: url("img/sprite.svg#mark-large");
-      background-image: url("img/mark-large.svg");
-      background-position: 9px 11px;
-    }
+  @media (min-width: $tablet-width) {
+    top: 4px;
+    left: 13px;
+    width: 13px;
+    height: 21px;
   }
+}
+
+.form__input--checkbox:checked + .form__mark--checkbox::before {
+  transform: rotate(52deg) skew(10deg) scale(1);
 }
 
 .form__mark {
