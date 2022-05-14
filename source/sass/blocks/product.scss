@@ -51,9 +51,9 @@
 
 .product__card-wrapper {
   margin: 0 auto;
+  padding: 20px 20px 23px;
   width: $mobile-width;
   box-sizing: border-box;
-  padding: 10px 20px 23px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 13px;
@@ -78,6 +78,9 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  width: 140px;
+  height: 112px;
+
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
@@ -94,12 +97,10 @@
 .product__picture {
   width: 68px;
   height: 86px;
-  margin-bottom: -4px;
 
   @media (min-width: $tablet-width) {
     width: 161px;
     height: 172px;
-    margin-bottom: 0;
   }
 }
 
@@ -129,7 +130,7 @@
 
 .product__name {
   grid-area: 2/3;
-  margin: 11px 64px 14px 0;
+  margin: 0 64px 14px 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
