@@ -5,3 +5,11 @@
 .nojs .main-nav__list {
   display: flex;
 }
+
+.nojs .contacts__map-iframe {
+  display: none;
+}
+
+.nojs .contacts__map-picture {
+  display: block;
+}
